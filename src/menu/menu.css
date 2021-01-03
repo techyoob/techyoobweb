@@ -1,0 +1,43 @@
+
+
+
+.main-menu {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    color: white;
+}
+
+
+.menu-item:hover {
+    background-color: #e6d875;
+    color:#22413b ;
+}
+
+.menu-item {
+    color: 'white';
+    height: 8%;
+    max-height: 50px;
+}
+
+.item-icon-div {
+    font-size: 1.5rem;
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-name-div {
+    font-size: 1.1rem;
+    flex: 3;
+    display: flex;
+    color: inherit;
+    align-items: center;
+    padding-left: 10;
+}
+
+.item-name-div h6 {
+    margin: 0;
+    text-transform: capitalize;
+}

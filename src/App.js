@@ -1,23 +1,42 @@
-import logo from './logo.svg';
+
+
+import React, { useState } from 'react';
+
 import './App.css';
 
+import { Header }  from './header';
+import { Pages } from './pages';
+
+// const menuItems = ['home', 'about', 'experience','projects','skills', 'education','contact', 'blog', 'resume' ]
+
+const menuItems = ['home', 'about', 'experience']
+
 function App() {
+
+  const [ selectedItem, setSelectedItem] = useState("skills");
+
+  function navigate(name){  
+    setSelectedItem(name);
+  }
+  
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-frame-div">
+      <div className="header-div">
+        <Header
+            menuItems={menuItems}
+            selectedItem={selectedItem}
+            navigate={navigate}
+         />
+      </div>
+      <div className="body-div">
+        <Pages
+            menuItems={menuItems}
+            selectedItem={selectedItem}
+            navigate={navigate}
+          />
+      </div>
     </div>
   );
 }
