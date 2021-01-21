@@ -1,0 +1,64 @@
+{
+    "skills":{
+        "technologies":[
+            {
+                "direction":"column",
+                "name":"full stack",
+                "tagShape":"square",
+                "size":0.1,
+                "level":0,
+                "step":{"x":"0", "y":"0"},
+                "children":[
+                    {
+                        "direction":"column",
+                        "name":"front end",
+                        "tagShape":"square",
+                        "size":0.1,
+                        "level":1,
+                        "step":{"x":"0", "y":"0"},
+                        "children":[]
+                    },
+                    {
+                        "direction":"column",
+                        "name":"back end",
+                        "tagShape":"square",
+                        "size":0.1,
+                        "level":1,
+                        "step":{"x":"0", "y":"0"},
+                        "children":[]
+                    },
+                    {
+                        "direction":"column",
+                        "name":"database",
+                        "tagShape":"square",
+                        "size":0.1,
+                        "level":1,
+                        "step":{"x":"0", "y":"0"},
+                        "children":[]
+                    },
+                    {
+                        "direction":"column",
+                        "name":"iot",
+                        "tagShape":"square",
+                        "size":0.1,
+                        "level":1,
+                        "step":{"x":"0", "y":"0"},
+                        "children":[]
+                    },
+                    {
+                        "direction":"column",
+                        "name":"mobile",
+                        "tagShape":"square",
+                        "size":0.1,
+                        "level":1,
+                        "step":{"x":"0", "y":"0"},
+                        "children":[]
+                    }
+                ]
+            }
+        ],
+        "languages":"",
+        "other":["window & linux applications"]
+
+    }
+}

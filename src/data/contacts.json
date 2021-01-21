@@ -1,0 +1,17 @@
+[
+    {
+        "name":"email",
+        "link":"techyoob@gmail.com",
+        "path":"mailto:techyoob@gmail.com"
+    },
+    {
+        "name":"github",
+        "link":"github.com/techyoob",
+        "path":"https://github.com/techyoob"
+    },
+    {
+        "name":"linkedin",
+        "link":"linkedin.com/in/ayoubsoud/",
+        "path":"https://www.linkedin.com/in/ayoubsoud/"
+    }
+]

@@ -16,12 +16,15 @@
     flex-direction: column;
     width: 100%;
     height: auto;
+    background-image: url("../assets/bg.png");
+    background-repeat: repeat;
 }
 
 
 .title-div {
-    flex: 6;
+    flex: 4;
     padding-left: 5%;
+    font-size: 0.9rem;
 }
 
 .collapse-icon-div {
@@ -38,10 +41,11 @@
 
 .page-body{
     display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 4%;
+    padding-bottom: 2%;
     height: 100%;
-    min-height: 350px;
-    background-image: url("../assets/bg.png");
-    background-repeat: repeat;
 }
 
 
@@ -56,66 +60,111 @@
     justify-content: center;
     align-content: center;
     height: 80px;
-    width: 100%;
-    background-color: #7e7e7e;
-    color:#C26868;
+    width: 95%;
+    align-self: center;
+    background-color: #52616b;
+    color:#fffef2;
+    border-radius: 15px;
+    box-shadow: 0px 3px 10px #919090 inset, #070707 0px -3px 10px inset;
 }
 
-.Experience-page-header {
-    flex: 1;
-    display: 'flex';
-    background-color: rgb(126, 126, 126);
-    padding-left: 50px;
-    color:#3b59b3;
-
-}
-
-.Projects-page-header {
-    flex: 1;
-    display: 'flex';
-    background-color: rgb(126, 126, 126);
-    padding-left: 50px;
-    color:#5a968c;
-
-}
-
-.Skills-page-header {
-    flex: 1;
-    display: 'flex';
-    background-color: rgb(126, 126, 126);
-    padding-left: 50px;
-    color:#b9babd;
-}
-
-.Education-page-header {
-    flex: 1;
-    display: 'flex';
-    background-color: rgb(126, 126, 126);
-    padding-left: 50px;
-    color:#97c1dc;
+.experience-page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 80px;
+    width: 95%;
+    align-self: center;
+    background-color: #52616b;
+    color:#fffef2;
+    border-radius: 15px;
+    box-shadow: 0px 3px 10px #919090 inset, #070707 0px -3px 10px inset;
 
 }
 
-.Contact-page-header {
-    flex: 1;
-    display: 'flex';
-    background-color: rgb(126, 126, 126);
-    padding-left: 50px;
-    color:#e7a941;
+.projects-page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 80px;
+    width: 95%;
+    align-self: center;
+    background-color: #52616b;
+    color:#fffef2;
+    border-radius: 15px;
+    box-shadow: 0px 3px 10px #919090 inset, #070707 0px -3px 10px inset;
+
 }
 
-.Blog-page-header {
-    flex: 1;
-    display: 'flex';
-    background-color: rgb(126, 126, 126);
-    padding-left: 50px;
-    color:#e8713d;
+.skills-page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 80px;
+    width: 95%;
+    align-self: center;
+    background-color: #52616b;
+    color:#fffef2;
+    border-radius: 15px;
+    box-shadow: 0px 3px 10px #919090 inset, #070707 0px -3px 10px inset;
 }
 
-.Resume-page-header {
-    flex: 1;
-    display: 'flex';
-    background-color: rgb(126, 126, 126);
-    padding-left: 50px;
-    color:#60448f;
+.education-page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 80px;
+    width: 95%;
+    align-self: center;
+    background-color: #52616b;
+    color:#fffef2;
+    border-radius: 15px;
+    box-shadow: 0px 3px 10px #919090 inset, #070707 0px -3px 10px inset;
+
+}
+
+.contact-page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 80px;
+    width: 95%;
+    align-self: center;
+    background-color: #52616b;
+    color:#fffef2;
+    border-radius: 15px;
+    box-shadow: 0px 3px 10px #919090 inset, #070707 0px -3px 10px inset;
+}
+
+.blog-page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 80px;
+    width: 95%;
+    align-self: center;
+    background-color: #52616b;
+    color:#fffef2;
+    border-radius: 15px;
+    box-shadow: 0px 3px 10px #919090 inset, #070707 0px -3px 10px inset;
+}
+
+.resume-page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 80px;
+    width: 95%;
+    align-self: center;
+    background-color: #52616b;
+    color:#fffef2;
+    border-radius: 15px;
+    box-shadow: 0px 3px 10px #919090 inset, #070707 0px -3px 10px inset;
 }

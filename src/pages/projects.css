@@ -1,0 +1,133 @@
+
+
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    padding-top: 5%;
+    justify-content: center;
+}
+
+
+.project-div {
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    perspective: 1000px;
+    box-shadow: 0px 0px 20px 2px #bebebe;
+    background-color: #f0f0f0;
+}
+
+.project-div:hover .project-body-div {
+    transform: rotateY(180deg);
+  }
+
+.project-body-div {
+    flex:5;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+
+
+.project-description, .project-technologies {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #949494;
+    color: black;
+}
+
+.project-title-divs {
+    display: flex;
+    flex:1;
+    justify-content: center;
+    border-bottom: 2px solid #949494;
+    color: black;
+    background-color: coral;
+}
+
+.project-details.div {
+    display: flex;
+    flex:4;
+    color: #f30000;
+    background-color: cornflowerblue;
+}
+
+
+
+
+.project-technologies {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(245, 245, 245, 0.9);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+.project-footer-div {
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-footer-div a:visited {
+    color: #74bb98;
+}
+
+.project-footer-div a:link {
+    color: #74bb98;
+}
+
+.link-button-div {
+    display: flex;
+    flex-direction: row;    
+    height: 50%;
+    width: 23%;
+    border: 1px solid #97afa3;
+    margin: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.link-button-div:hover {
+    background-color: #64646d;
+}
+
+.link-button-icon {
+    display: flex;
+    flex: 3;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.link-button-text {
+    size: 10px;
+    display: flex;
+    flex: 5;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}

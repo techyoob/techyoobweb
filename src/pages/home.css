@@ -197,6 +197,9 @@
     font-size: 100%;
 }
 
+.social-btn:hover {
+    opacity: 0.6;
+}
 
 
 

@@ -11,9 +11,13 @@ import {
 import './pages.css';
 import { Home } from './home';
 import { About } from './about';
-// import { Experience } from './pages/experience';
-// import { Projects } from './pages/projects';
-// import { Skills } from './pages/skills';
+import { Experience } from './experience';
+import { Projects } from './projects';
+import { Skills } from './skills';
+import { Education } from './education';
+import { Contact } from './contact';
+import { Blog } from './blog';
+
 
 // import bg from './bg.png';
 
@@ -100,48 +104,48 @@ const PageLoader = props => {
                     <About {...props} />
                 </PageProvider>
             );
-//         case 'Experience':
-//             return (
-//                 <PageProvider {...props} >
-//                     <Experience  {...props} />
-//                 </PageProvider>
-//             );
-//         case 'Projects':            
-//             return (
-//                 <PageProvider {...props} >
-//                     <Projects  {...props} />
-//                 </PageProvider>
-//             );
-//         case 'Skills':            
-//             return (
-//                 <PageProvider {...props} >
-//                     <Skills  {...props} />
-//                 </PageProvider>
-//             );
-//         case 'Education':            
-//             return (
-//                 <PageProvider {...props} >
-//                     <Education  {...props} />
-//                 </PageProvider>
-//             );
-//         case 'Contact':            
-//             return (
-//                 <PageProvider {...props} >
-//                     <Contact  {...props} />
-//                 </PageProvider>
-//             );
-//         case 'Blog':            
-//             return (
-//                 <PageProvider {...props} >
-//                     <Blog  {...props} />
-//                 </PageProvider>
-//             );
-//         case 'Resume':            
-//             return (
-//                 <PageProvider {...props} >
-//                     <Resume  {...props} />
-//                 </PageProvider>
-//             );
+        case 'experience':
+            return (
+                <PageProvider {...props} >
+                    <Experience  {...props} />
+                </PageProvider>
+            );
+        case 'projects':            
+            return (
+                <PageProvider {...props} >
+                    <Projects  {...props} />
+                </PageProvider>
+            );
+        case 'skills':            
+            return (
+                <PageProvider {...props} >
+                    <Skills  {...props} />
+                </PageProvider>
+            );
+        case 'education':            
+            return (
+                <PageProvider {...props} >
+                    <Education  {...props} />
+                </PageProvider>
+            );
+        case 'contact':            
+            return (
+                <PageProvider {...props} >
+                    <Contact  {...props} />
+                </PageProvider>
+            );
+        case 'blog':            
+            return (
+                <PageProvider {...props} >
+                    <Blog  {...props} />
+                </PageProvider>
+            );
+        // case 'resume':            
+        //     return (
+        //         <PageProvider {...props} >
+        //             <Resume  {...props} />
+        //         </PageProvider>
+        //     );
         default:
             return null;
     }
@@ -158,16 +162,27 @@ export const PageProvider = props => {
 
     const collapsePage = () => {
         setIsCollapsed(!isCollapsed);
-
-        // TODO: scroll to uncollapsed page
-        
+             
     }
 
     useEffect( () => {
-        pageRef.current.scrollIntoView({ behavior: 'smooth' });
+        if(isCollapsed===false){
+            pageRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+        
     }, [isCollapsed])
 
+    useEffect( () => {
+        
+        if(props.selectedItem === props.name){
+            pageRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+
+    }, [props.selectedItem])
+
+
 // console.log(" PageProvider props are ", props);
+
 
     return (
         <div 
@@ -178,7 +193,7 @@ export const PageProvider = props => {
                 onClick={collapsePage}>
                 <div className="title-div">
                     <h1>
-                        {` ${props.name.toUpperCase()} `}
+                        {`${props.name.toUpperCase()}`}
                     </h1>
                 </div>
                 <div 
@@ -187,7 +202,9 @@ export const PageProvider = props => {
                      {isCollapsed ? <FaChevronDown /> : <FaChevronUp /> }
                 </div>
              </span>
-             <div className={'page-body'} style={props.name != "home" ? styles.pageBody(props.isColumnRatio && isCollapsed) : null}>
+             <div 
+                className={'page-body'} 
+                style={props.name != "home" ? styles.pageBody(props.isColumnRatio && isCollapsed) : {paddingTop:"0px", paddingBottom:"0px"}}>
                 {props.children}
              </div>
         </div>
@@ -205,46 +222,6 @@ export const PageProvider = props => {
 
 
 
-
-
-
-
-
-
-export const Education = props => {
-    return (
-        <div className="education" style={styles.page}>
-
-        </div>
-    );
-};
-
-
-export const Contact = props => {
-    return (
-        <div className="contact" style={styles.page}>
-
-        </div>
-    );
-};
-
-
-export const Blog = props => {
-    return (
-        <div className="blog" style={styles.page}>
-
-        </div>
-    );
-};
-
-
-export const Resume = props => {
-    return (
-        <div className="resume" style={styles.page}>
-
-        </div>
-    );
-};
 
 
 

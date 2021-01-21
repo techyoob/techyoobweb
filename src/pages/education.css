@@ -1,0 +1,80 @@
+
+
+
+.education {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    padding-top: 5%;
+    justify-content: center;
+}
+
+.school-div {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.school-logo-div {
+    flex:12;
+}
+
+.school-timeline-div {
+    flex:1;
+}
+
+.school-info-wrapper {
+    display: flex;
+    flex:12;
+    justify-content: center;
+    align-items: center;
+}
+
+.school-info-div {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    background-color: #f0f0f0;
+    padding-left: 20px;
+    box-shadow: 0px 0px 10px 1px #8d8d8d;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.school-info-div h2{
+    font-weight: bold;
+    background-color: #deb887;
+    font-size: clamp(12px, 1.1rem, 19px);
+    
+}
+
+.school-info-div h4{
+    margin: 0;
+    font-weight: normal;
+    font-size: clamp(9px, 0.9rem, 15px);
+}
+
+.school-info-div p{
+    font-weight: bold;
+    font-size: clamp(8px,1.0rem, 13px);
+}
+
+.school-loc-grad {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 5%;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    .school-div  {
+        flex-direction: row;
+    }
+  }
+  
+  
+  

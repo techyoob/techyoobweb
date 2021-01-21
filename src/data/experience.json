@@ -1,0 +1,55 @@
+[
+    {
+        "name": "Warvelous Technology ( Startup )",
+        "start": "March 2019",
+        "end": "August 2020",
+        "position": "Co-founder & Full-Stack Engineer",
+        "location":"Orlando FL",
+        "roles":[
+            "Contributed as a key role to development lifecycle of all milestones required to deliver a consumer product.",
+            "Worked collaboratively in an agile team of software, hardware and mechanical engineers to build and test IoT prototypes.",
+            "Designed and developed firmware to manipulate Wi-Fi and Bluetooth connected lighting devices",
+            "Created unit tests to ensure IoT prototypes meet consumer requirements.",
+            "Helped design user friendly mobile application wireframes.",
+            "Designed and developed remote control application for iOS and Android devices using React Native framework.",
+            "Designed and managed the application state with event based asynchronous actions using Redux and Redux Thunk.",
+            "Implemented presentation and routing of application screens with React Navigation.",
+            "Helped design and implementation of the database models that enabled user login, usage statistics, and user profiles using MongoDB.",
+            "Designed the backend boilerplate to handle user requests using Node.js and Express.js",
+            "Other involved skills are C/C++, Javascript, Java, ES6, Git, Scrum and Python."
+            
+        ]
+    },
+    {
+        "name": "Photon-X LLC",
+        "start": "March 2017",
+        "end": "February 2019",
+        "position": "Computer Engineer",
+        "location":"Kissimmee FL",
+        "roles":[
+            "Built strong expertise in all phases of the software development life cycle.",
+            "Researched, designed and implemented a biometrics authentication system prototype with touch less scanner.",
+            "Helped build and improve special phase imaging systems.",
+            "Managed complete software packaging process.",
+            "Helped design and improve software quality assurance process.",
+            "Involved skills are C/C++, C# for .NET, XAML, Cuda, OpenCL, OpenCV, MATLAB, TFS, and Optics."
+            
+        ],
+        "link":"https://www.photon-x.com/"
+    },
+    {
+        "name": "Target Media Marketing",
+        "start": "October 2015",
+        "end": "January 2017",
+        "position": "IT Network Administrator & Developer",
+        "location":"Orlando FL",
+        "roles":[
+            "Set up and updated email marketer servers.",
+            "Configured and customized marketer platform using PHP based add-ons to improve server’s performance.",
+            "Configured SMPT servers to comply with CAN-SPAM regulations and ensure healthy email deliverability.",
+            "Designed and created SQL database to maintain clean leads data.",
+            "Developed desktop application with Java and XML to filter and update campaign leads database.",
+            "Involved skills are network protocols, spam regulations, Java, JavaFX, MySQL, and PHP."
+        ]
+    }
+]

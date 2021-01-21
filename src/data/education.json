@@ -1,0 +1,16 @@
+[
+    {
+        "id":0,
+        "name":"University of Central Florida",
+        "subject":"Bachelor of Science in Computer Engineering",
+        "location":"Orlando, FL",
+        "graduation":"Spring 2016"
+    },
+    {
+        "id":1,
+        "name":"Valencia College",
+        "subject":"Associate of Arts in Articulated Engineering",
+        "location":"Orlando, FL",
+        "graduation":"Summer 2013"
+    }
+]

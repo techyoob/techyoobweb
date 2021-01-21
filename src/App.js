@@ -9,11 +9,11 @@ import { Pages } from './pages';
 
 // const menuItems = ['home', 'about', 'experience','projects','skills', 'education','contact', 'blog', 'resume' ]
 
-const menuItems = ['home', 'about', 'experience']
+const menuItems = ['home', 'about', 'experience', 'projects', 'skills', 'education', 'contact', 'resume']
 
 function App() {
 
-  const [ selectedItem, setSelectedItem] = useState("skills");
+  const [ selectedItem, setSelectedItem] = useState("home");
 
   function navigate(name){  
     setSelectedItem(name);

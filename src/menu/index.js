@@ -14,18 +14,28 @@ import {
     FaRegFileAlt,
 } from "react-icons/fa";
 
+
+
+
+
 export const Menu = props => {
 
 
     const onItemSelect = index => {
-        props.onItemSelect(index)
+        
+        if(index==="resume"){
+            window.open(`https://drive.google.com/file/d/1icMpsOXH6OE_h1eOI_mQn_v-Ao9Bhzr9/view?usp=sharing`);
+        } else {
+            props.onItemSelect(index)
+
+        }
     }
 
     return (
         <div className="main-menu" >
             {props.items.map( (item, index) => {
                 return (
-                     item === "home" ? null :                
+                     item === "home" ? null :             
                     <div className="menu-item"
                         key={index}
                         onClick={() => onItemSelect(item)}
@@ -38,7 +48,6 @@ export const Menu = props => {
                                 <h6> {`${item}`} </h6>
                             </div>                       
                     </div>
-                    
                 );
             })}
         </div>
@@ -57,43 +66,35 @@ const MenuIcons = props => {
     switch (props.name) {
         case 'about':
             return (
-                <FaUser 
-                    style={{ color: '#C26868'}}/>
+                <FaUser />
             );
         case 'experience':
             return (
-                <FaBriefcase  
-                    style={{ color: '#3b59b3'}}/>
+                <FaBriefcase  />
             );
         case 'projects':            
             return (
-                <FaPuzzlePiece 
-                    style={{ color: '#5a968c'}}/>
+                <FaPuzzlePiece  />
             );
         case 'skills':            
             return (
-                <FaChartBar 
-                    style={{ color: '#b9babd'}}/>
+                <FaChartBar />
             );
         case 'education':            
             return (
-                <FaGraduationCap 
-                    style={{ color: '#97c1dc'}}/>
+                <FaGraduationCap  />
             );
         case 'contact':            
             return (
-                <FaEnvelope
-                    style={{ color: '#e7a941'}}/>
+                <FaEnvelope  />
             );
         case 'blog':            
             return (
-                <FaPen
-                    style={{ color: '#e8713d'}}/>
+                <FaPen />
             );
         case 'resume':            
             return (
-                <FaRegFileAlt
-                    style={{ color: '#60448f'}}/>
+                <FaRegFileAlt />
             );
         default:
             return null;

@@ -1,0 +1,248 @@
+.skills-div {    
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+
+.skills-div h2{    
+    color: rgb(82, 82, 82);
+    text-align: center;
+}
+
+
+.techs-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.techs-title-div {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: #52616b;
+    border-bottom: 1px solid black;
+}
+
+.techs-body-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-top: 4%;
+}
+
+.tech-div {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.spacing-div {
+    height: 50px;
+}
+
+.title-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.title-div h2{
+    text-transform: capitalize;
+}
+
+
+.tech-logo {
+    width:10%;
+    height: 55px;
+}
+
+.skill-div {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1%;
+}
+
+.skill-logo-div {
+    display: flex;
+    flex-direction: column;
+    width: 8%;
+    height: 140px;
+    background-color: #ffffff;
+    border-radius: 10%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 1px #8d8d8d;
+}
+
+
+.skill-logo {
+    height: 70%;
+}
+
+.skill-name {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #6e6e6e;
+}
+
+.skill-name p{
+    text-transform: capitalize;
+    margin:0;
+    color: #2e2d2d;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+.langs-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.langs-title-div {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: #52616b;
+    border-bottom: 1px solid black;
+}
+
+.langs-body-div {
+    display:flex;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    width: 100%;
+    height: auto;
+    overflow-x:hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.lang-div {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%; 
+    box-shadow: 0px 0px 10px 1px #8d8d8d;
+    background-color: #f7f7f7;
+}
+
+.lang-name {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+.others-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.others-title-div {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: #52616b;
+    border-bottom: 1px solid black;
+}
+
+.others-body-div {
+    display: flex;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    width: 100%;
+    height: auto;
+    overflow-x:hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.circle-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.techs-head {
+    max-height: 600px;
+    min-width: 285px;
+    flex:1;
+    border: 2px solid red;
+}
+
+.techs-details {
+    max-height: 600px;
+    min-width: 285px;
+    flex:5;
+    border: 2px solid rgb(0, 255, 55);
+}
+
+
+.techs-container {
+    max-height: 500px;
+    min-width: 285px;
+    border: 2px solid red;
+}
+
+
+.tag-element {
+    background-color: lightseagreen;
+    border: 2px solid rgb(226, 240, 32);
+}
+
+
+
+.bubble-box:hover {
+    fill: #29cfcf;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .skill-logo-div  {
+        width: 12%;
+    }
+  }
+
+@media screen and (max-width: 800px) {
+    .skill-logo-div  {
+        width: 18%;
+    }
+  }
+
+@media screen and (max-width: 500px) {
+    .skill-logo-div  {
+        width: 22%;
+        height: 110px;
+    }
+  }
+  
+  
+  
+  
