@@ -4,7 +4,7 @@
         "description":"Techyoob Web is a portfolio website project ( beta version ) that represents my engineering journey. It was built using React, CSS and SVG",
         "technologies":["react", "css", "html", "nodejs", "es6"],
         "links":{
-            "GitHub":"https://github.com/techyoob",
+            "GitHub":"https://github.com/techyoob/techyoobweb",
             "Demo":"http://www.techyoob.com/"
         }
     }
