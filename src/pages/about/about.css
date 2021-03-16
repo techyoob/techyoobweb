@@ -1,0 +1,26 @@
+
+
+.about {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 500px;
+    color: black;
+    background-color: #4d5e66;
+}
+
+
+.about-text-div {
+    width: 80%;
+    height: 80%;
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: "Patrick Hand","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size:clamp(10px, 1.5vw, 18px );
+    box-shadow: 0px 0px 8px 1px #bebebe;
+    background-image: url("../../assets/bg.png");
+    background-repeat: repeat;
+}
