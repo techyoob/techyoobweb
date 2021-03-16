@@ -74,7 +74,7 @@ export const Pages = props => {
                 return (
                     <PageLoader 
                         name={item}
-                        key={item}
+                        key={index}
                         isColumnRatio={isColumnRatio}
                         {...props}/>
                 );

@@ -3,8 +3,8 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './contact.css';
 
-import contacts from '../data/contacts.json'
-import { IconSVG } from '../svgs'
+import contacts from '../../data/contacts.json'
+import { IconSVG } from '../../svgs'
 
 
 

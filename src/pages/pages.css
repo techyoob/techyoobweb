@@ -16,8 +16,6 @@
     flex-direction: column;
     width: 100%;
     height: auto;
-    background-image: url("../assets/bg.png");
-    background-repeat: repeat;
 }
 
 
@@ -43,8 +41,6 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    padding-top: 4%;
-    padding-bottom: 2%;
     height: 100%;
 }
 
@@ -60,12 +56,10 @@
     justify-content: center;
     align-content: center;
     height: 80px;
-    width: 95%;
+    width: 100%;
     align-self: center;
-    background-color: #52616b;
-    color:#fffef2;
-    border-radius: 15px;
-    box-shadow: 0px 3px 10px #919090 inset, #070707 0px -3px 10px inset;
+    color: #cacaca;
+    background-color: #4d5e66;
 }
 
 .experience-page-header {
@@ -74,13 +68,10 @@
     justify-content: center;
     align-content: center;
     height: 80px;
-    width: 95%;
+    width: 100%;
     align-self: center;
-    background-color: #52616b;
-    color:#fffef2;
-    border-radius: 15px;
-    box-shadow: 0px 3px 10px #919090 inset, #070707 0px -3px 10px inset;
-
+    color: #52616b;
+    background-color: #a6afb6;
 }
 
 .projects-page-header {
@@ -89,13 +80,10 @@
     justify-content: center;
     align-content: center;
     height: 80px;
-    width: 95%;
+    width: 100%;
     align-self: center;
-    background-color: #52616b;
-    color:#fffef2;
-    border-radius: 15px;
-    box-shadow: 0px 3px 10px #919090 inset, #070707 0px -3px 10px inset;
-
+    background-color: #c5c9cc;
+    color: #52616b;
 }
 
 .skills-page-header {
@@ -104,12 +92,10 @@
     justify-content: center;
     align-content: center;
     height: 80px;
-    width: 95%;
+    width: 100%;
     align-self: center;
-    background-color: #52616b;
+    background-color: #86949f;
     color:#fffef2;
-    border-radius: 15px;
-    box-shadow: 0px 3px 10px #919090 inset, #070707 0px -3px 10px inset;
 }
 
 .education-page-header {
@@ -118,13 +104,10 @@
     justify-content: center;
     align-content: center;
     height: 80px;
-    width: 95%;
+    width: 100%;
     align-self: center;
-    background-color: #52616b;
+    background-color: #c3c3c3;
     color:#fffef2;
-    border-radius: 15px;
-    box-shadow: 0px 3px 10px #919090 inset, #070707 0px -3px 10px inset;
-
 }
 
 .contact-page-header {
@@ -133,12 +116,10 @@
     justify-content: center;
     align-content: center;
     height: 80px;
-    width: 95%;
+    width: 100%;
     align-self: center;
-    background-color: #52616b;
-    color:#fffef2;
-    border-radius: 15px;
-    box-shadow: 0px 3px 10px #919090 inset, #070707 0px -3px 10px inset;
+    background-color: #eeedf2;
+    color: #52616b;
 }
 
 .blog-page-header {
@@ -147,12 +128,10 @@
     justify-content: center;
     align-content: center;
     height: 80px;
-    width: 95%;
+    width: 100%;
     align-self: center;
-    background-color: #52616b;
-    color:#fffef2;
-    border-radius: 15px;
-    box-shadow: 0px 3px 10px #919090 inset, #070707 0px -3px 10px inset;
+    background-color: #eeedf2;
+    color: #52616b;
 }
 
 .resume-page-header {
@@ -164,7 +143,7 @@
     width: 95%;
     align-self: center;
     background-color: #52616b;
-    color:#fffef2;
+    color: #52616b;
     border-radius: 15px;
     box-shadow: 0px 3px 10px #919090 inset, #070707 0px -3px 10px inset;
 }

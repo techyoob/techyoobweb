@@ -1,0 +1,334 @@
+
+.home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    height:100vh;
+    width:100%;
+    min-height: 650px;
+    color: white;
+    background-size: cover;
+    background-position: left;
+    /* background: url(../../assets/bg.jpg); */
+}
+
+.left-section-div {
+    display: flex;
+    flex:3;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.brief-bio-div {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgba(255, 253, 232, 0.5);
+    width: 40%;
+    height: 300px;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-left: 15%;
+    font-family: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+}
+
+.text-div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 20px;
+    justify-content: center;
+    background-color: brown;
+}
+
+.text-div p {
+    margin: 0;
+    padding-bottom: 0;
+    padding-top: 5px;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-weight: bold;
+    font-size:clamp(12px, 2vw, 20px );
+}
+
+.contact-button-div {
+    height: 50px;
+    padding-bottom: 35px;
+}
+
+.contact-me-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    height: 70%;
+    width: 150px;
+    min-width: 120px ;
+    border-radius: 5px;
+    background-color: #6d4164; 
+    color: #cacaca;
+    border: solid;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.8rem;
+
+}
+
+.contact-me-btn:hover {
+    background-color: #788a77; 
+}
+
+.contact-me-btn:active {
+    background-color: #818181; 
+    color: #cacaca;
+}
+
+.contact-me-btn:focus {
+    outline: none;
+}
+
+
+.social-media-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+    height: 50px;
+    width: 85%;
+    color: #646e64;
+    border-top: 1px solid #646e64;
+}
+
+.social-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    border-radius: 50%;
+}
+
+.social-btn:hover {
+    background-color: #8892b0;
+}
+
+
+
+
+
+
+.text-I-div {
+    height: 20px;
+    color: #525252;
+}
+
+.text-II-div {
+    height: 60px;
+    display: flex;
+    color: #525252;
+}
+
+
+.text-II-div span{
+    font-weight: bold;
+    font-size: 35px;
+    margin-right: 15px;
+    color: #6d4164;
+}
+
+.text-III-div {
+    height: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #525252;
+}
+
+.text-IV-div {
+    height: 50px;
+    color: #646e64;
+}
+
+
+.right-section-div {
+    flex: 2;
+}
+
+
+
+
+
+@media screen and (max-width: 1400px) {
+    .brief-bio-div {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 1140px) {
+    .brief-bio-div {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .brief-bio-div {
+        width: 70%;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .bio-div {
+        font-size: .70rem;
+    }
+    .home {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .brief-bio-div {
+        width: 90%;
+        margin-left: 0px;
+        margin-top: 35%;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-one-div {    
+    display: flex;
+    flex-direction: column;
+}
+
+.section-two-div {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+}
+
+
+
+.call-to-action-div {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
+
+.brief-bio-logo-div {
+    display: flex;
+    flex: 1;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+
+    
+
+
+
+
+.intro-div {
+    display: flex;
+    flex:3;
+    padding-left: px;
+    border-radius: 5%;
+    font-size:20px;
+    flex-direction: column;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+
+.intro-div  p{
+    color: darkorchid;
+    font-size:clamp(14px,5vw,16px);
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+
+
+.tittle-div {
+    display: flex;
+    flex: 15;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tittle-div h1{
+    font-size: clamp(25px, 4vw, 50px);
+    margin:0;
+    color:#ccd6f6;
+}
+
+.tittle-div p{
+    font-size:clamp(10px,1.1vw,20px);
+    margin:0;
+    line-height: 0px;
+    color:#8892b0;
+    font-weight: bold;
+}
+
+.break-div {
+    display:flex;
+    flex:1;
+    flex-direction:column;
+}
+
+.bio-div{
+    display:flex;
+    flex:15;
+    flex-direction:column;
+    justify-content:center;
+    font-size: .82rem;
+    align-items:flex-start;
+    color:#8892b0;
+    
+}
+
+.intro-logo-div {
+    display: flex;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+}
+
+.intro-logo-div img{
+    object-fit: contain;
+    width: 100%;
+}
+
+
+
+
+.social-icons-div { 
+    display: flex;
+    flex-direction: row;
+}
+
+
+

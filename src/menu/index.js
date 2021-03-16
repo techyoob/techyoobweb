@@ -106,9 +106,7 @@ const MenuIcons = props => {
 const styles = {
 
     menuItem: selected => ({
-        display: 'flex',
         flexDirection: 'row',
-        justifyContent: 'center',
     }),
     itemIconDiv: {
         flex:1,

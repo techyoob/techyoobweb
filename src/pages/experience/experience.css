@@ -4,7 +4,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     min-height: 390px;
+    background-color: #a6afb6;
+    width: 100%;
 }
 
 

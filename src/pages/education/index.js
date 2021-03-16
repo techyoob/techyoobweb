@@ -3,8 +3,8 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './education.css';
 
-import education from '../data/education.json';
-import { IconSVG } from '../svgs';
+import education from '../../data/education.json';
+import { IconSVG } from '../../svgs';
 
 
 
@@ -17,7 +17,7 @@ export const Education = props => {
     const [timelineSize, setTimelineSize] = useState({w:0, h:0})
     const [schoolSize, setSchoolSize] = useState({w:0, h:0})
 
-    
+
     useEffect(()=>{
 
         if(timelineRef.current){

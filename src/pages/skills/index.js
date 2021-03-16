@@ -10,18 +10,18 @@ import React, { useState, useRef, useEffect } from 'react';
 // import * as d3 from "d3";
 
 import './skills.css'
-import techsList from '../data/technologies.json';
-import langsList from '../data/languages.json';
-import othersList from '../data/others.json';
-import { IconSVG } from '../svgs'
+import techsList from '../../data/technologies.json';
+import langsList from '../../data/languages.json';
+import othersList from '../../data/others.json';
+import { IconSVG } from '../../svgs'
 
 
-import skills from '../data/skills.json'
-import graph from '../data/graphs.json'
+import skills from '../../data/skills.json'
+import graph from '../../data/graphs.json'
 // import { IconSVG } from '../svgs/index.js'
 
 
-import testData from '../data/testData.json'
+import testData from '../../data/testData.json'
 
 // import { ReactComponent  as FullStack } from '../svgs/fullstack.svg';
 
@@ -841,7 +841,7 @@ const styles = {
           width:"20px"     
       },
       skillsDiv: isColumnRatio => ({
-          width: isColumnRatio ? '90%' : '80%',
+        //   width: isColumnRatio ? '90%' : '80%',
       }),
 
   };

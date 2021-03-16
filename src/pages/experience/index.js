@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import './experience.css';
 
-import experience from '../data/experience.json'
+import experience from '../../data/experience.json'
 
 
 import { 

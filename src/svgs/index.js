@@ -53,7 +53,11 @@ export const IconSVG = props => {
 
     switch(props.name){
         case "full stack":
-            return <FullStack x={props.x} y={props.y} width={props.width} height={props.height} />
+            return <FullStack x={typeof props.x === 'undefined' ? 0 : props.x}
+                            y={typeof props.y === 'undefined' ? 0 : props.y}
+                            width={typeof props.width === 'undefined' ? "100%" : props.width}
+                            height={typeof props.height === 'undefined' ? "100%" : props.height}
+                            fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
         case "back end":
             return <BackEnd x={props.x} y={props.y} width={props.width} height={props.height}/>
         case "front end":
