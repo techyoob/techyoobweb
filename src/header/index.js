@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import './header.css';
 import { IoMdClose, IoMdMenu } from "react-icons/io";
 
-import { Badge } from '../myBadge';
 import { Menu } from '../menu';
 
 

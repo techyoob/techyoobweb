@@ -14,7 +14,7 @@ const menuItems = ['home', 'about', 'experience', 'projects', 'skills', 'educati
 
 function App() {
 
-  const [ selectedItem, setSelectedItem] = useState("home");
+  const [ selectedItem, setSelectedItem] = useState("skills");
 
   function navigate(name){  
     setSelectedItem(name);
