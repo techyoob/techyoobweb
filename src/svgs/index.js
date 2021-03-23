@@ -63,7 +63,7 @@ export const IconSVG = props => {
                             y={typeof props.y === 'undefined' ? 0 : props.y}
                             width={typeof props.width === 'undefined' ? "100%" : props.width}
                             height={typeof props.height === 'undefined' ? "100%" : props.height}
-            fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
+                            fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
         case "front end":
             return <FrontEnd x={props.x} y={props.y} width={props.width} height={props.height}/>
         case "database":
@@ -72,33 +72,27 @@ export const IconSVG = props => {
             return <Iot x={props.x} y={props.y} width={props.width} height={props.height}/>
         case ".net":
             return(
-                <svg width={props.width} height={props.height}>
-                    <DotNet  x={typeof props.x === 'undefined' ? 0 : props.x}
-                            y={typeof props.y === 'undefined' ? 0 : props.y}
-                            width={typeof props.width === 'undefined' ? "100%" : props.width}
-                            height={typeof props.height === 'undefined' ? "100%" : props.height}
-                            fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
-                </svg>
+                <DotNet  x={typeof props.x === 'undefined' ? 0 : props.x}
+                        y={typeof props.y === 'undefined' ? 0 : props.y}
+                        width={typeof props.width === 'undefined' ? "100%" : props.width}
+                        height={typeof props.height === 'undefined' ? "100%" : props.height}
+                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
             )
         case "nodejs":
             return(
-                <svg width={props.width} height={props.height}>
-                    <NodeJS x={typeof props.x === 'undefined' ? 0 : props.x}
-                            y={typeof props.y === 'undefined' ? 0 : props.y}
-                            width={typeof props.width === 'undefined' ? "100%" : props.width}
-                            height={typeof props.height === 'undefined' ? "100%" : props.height}
-                            fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
-                </svg>
+                <NodeJS x={typeof props.x === 'undefined' ? 0 : props.x}
+                        y={typeof props.y === 'undefined' ? 0 : props.y}
+                        width={typeof props.width === 'undefined' ? "100%" : props.width}
+                        height={typeof props.height === 'undefined' ? "100%" : props.height}
+                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
             )
         case "express.js":
             return(
-                <svg width={props.width} height={props.height}>
                 <ExpressJS x={typeof props.x === 'undefined' ? 0 : props.x}
                         y={typeof props.y === 'undefined' ? 0 : props.y}
                         width={typeof props.width === 'undefined' ? "100%" : props.width}
                         height={typeof props.height === 'undefined' ? "100%" : props.height}
                         fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
-                </svg>
             )
         case "mobile":
             return < Mobile x={props.x} y={props.y} width={props.width} height={props.height}/>
@@ -107,33 +101,27 @@ export const IconSVG = props => {
         case "react":
         case "react native":
             return(
-                <svg width={props.width} height={props.height}>
-                    <ReactSVG x={typeof props.x === 'undefined' ? 0 : props.x}
-                            y={typeof props.y === 'undefined' ? 0 : props.y}
-                            width={typeof props.width === 'undefined' ? "100%" : props.width}
-                            height={typeof props.height === 'undefined' ? "100%" : props.height}
-                            fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
-                </svg>
-            )
-        case "android":
-            return(
-                <svg width={props.width} height={props.height}>
-                    <Android x={typeof props.x === 'undefined' ? 0 : props.x}
-                            y={typeof props.y === 'undefined' ? 0 : props.y}
-                            width={typeof props.width === 'undefined' ? "100%" : props.width}
-                            height={typeof props.height === 'undefined' ? "100%" : props.height}
-                            fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
-                </svg>
-            )
-        case "ios":
-            return(
-                <svg width={props.width} height={props.height}>
-                    <IoS x={typeof props.x === 'undefined' ? 0 : props.x}
+                <ReactSVG x={typeof props.x === 'undefined' ? 0 : props.x}
                         y={typeof props.y === 'undefined' ? 0 : props.y}
                         width={typeof props.width === 'undefined' ? "100%" : props.width}
                         height={typeof props.height === 'undefined' ? "100%" : props.height}
                         fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
-                </svg>
+            )
+        case "android":
+            return(
+                <Android x={typeof props.x === 'undefined' ? 0 : props.x}
+                        y={typeof props.y === 'undefined' ? 0 : props.y}
+                        width={typeof props.width === 'undefined' ? "100%" : props.width}
+                        height={typeof props.height === 'undefined' ? "100%" : props.height}
+                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
+            )
+        case "ios":
+            return(
+                <IoS x={typeof props.x === 'undefined' ? 0 : props.x}
+                    y={typeof props.y === 'undefined' ? 0 : props.y}
+                    width={typeof props.width === 'undefined' ? "100%" : props.width}
+                    height={typeof props.height === 'undefined' ? "100%" : props.height}
+                    fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
             )
         case "css":
             return(
@@ -145,63 +133,51 @@ export const IconSVG = props => {
             )            
         case "html":
             return(
-                <svg width={props.width} height={props.height}>
-                    <HTML x={typeof props.x === 'undefined' ? 0 : props.x}
-                        y={typeof props.y === 'undefined' ? 0 : props.y}
-                        width={typeof props.width === 'undefined' ? "100%" : props.width}
-                        height={typeof props.height === 'undefined' ? "100%" : props.height}
-                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
-                </svg>
+                <HTML x={typeof props.x === 'undefined' ? 0 : props.x}
+                    y={typeof props.y === 'undefined' ? 0 : props.y}
+                    width={typeof props.width === 'undefined' ? "100%" : props.width}
+                    height={typeof props.height === 'undefined' ? "100%" : props.height}
+                    fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
             )
         case "d3.js":
             return(
-                <svg width={props.width} height={props.height}>
-                    <D3JS x={typeof props.x === 'undefined' ? 0 : props.x}
-                        y={typeof props.y === 'undefined' ? 0 : props.y}
-                        width={typeof props.width === 'undefined' ? "100%" : props.width}
-                        height={typeof props.height === 'undefined' ? "100%" : props.height}
-                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
-                </svg>
+                <D3JS x={typeof props.x === 'undefined' ? 0 : props.x}
+                    y={typeof props.y === 'undefined' ? 0 : props.y}
+                    width={typeof props.width === 'undefined' ? "100%" : props.width}
+                    height={typeof props.height === 'undefined' ? "100%" : props.height}
+                    fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
             )
         case "mysql":
             return(
-                <svg width={props.width} height={props.height}>
-                    <MySQOL x={typeof props.x === 'undefined' ? 0 : props.x}
-                        y={typeof props.y === 'undefined' ? 0 : props.y}
-                        width={typeof props.width === 'undefined' ? "100%" : props.width}
-                        height={typeof props.height === 'undefined' ? "100%" : props.height}
-                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
-                </svg>
+                <MySQOL x={typeof props.x === 'undefined' ? 0 : props.x}
+                    y={typeof props.y === 'undefined' ? 0 : props.y}
+                    width={typeof props.width === 'undefined' ? "100%" : props.width}
+                    height={typeof props.height === 'undefined' ? "100%" : props.height}
+                    fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
             )
         case "mongodb":
             return(
-                <svg width={props.width} height={props.height}>
-                    <MongoDB x={typeof props.x === 'undefined' ? 0 : props.x}
-                        y={typeof props.y === 'undefined' ? 0 : props.y}
-                        width={typeof props.width === 'undefined' ? "100%" : props.width}
-                        height={typeof props.height === 'undefined' ? "100%" : props.height}
-                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
-                </svg>
+                <MongoDB x={typeof props.x === 'undefined' ? 0 : props.x}
+                    y={typeof props.y === 'undefined' ? 0 : props.y}
+                    width={typeof props.width === 'undefined' ? "100%" : props.width}
+                    height={typeof props.height === 'undefined' ? "100%" : props.height}
+                    fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
             )
         case "arduino":
             return(
-                <svg width={props.width} height={props.height}>
-                    <Arduino x={typeof props.x === 'undefined' ? 0 : props.x}
-                        y={typeof props.y === 'undefined' ? 0 : props.y}
-                        width={typeof props.width === 'undefined' ? "100%" : props.width}
-                        height={typeof props.height === 'undefined' ? "100%" : props.height}
-                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
-                </svg>
+                <Arduino x={typeof props.x === 'undefined' ? 0 : props.x}
+                    y={typeof props.y === 'undefined' ? 0 : props.y}
+                    width={typeof props.width === 'undefined' ? "100%" : props.width}
+                    height={typeof props.height === 'undefined' ? "100%" : props.height}
+                    fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
             )
-        case "ti":
+        case "texas instruments":
             return(
-                <svg width={props.width} height={props.height}>
-                    <Ti x={typeof props.x === 'undefined' ? 0 : props.x}
-                        y={typeof props.y === 'undefined' ? 0 : props.y}
-                        width={typeof props.width === 'undefined' ? "100%" : props.width}
-                        height={typeof props.height === 'undefined' ? "100%" : props.height}
-                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
-                </svg>
+                <Ti x={typeof props.x === 'undefined' ? 0 : props.x}
+                    y={typeof props.y === 'undefined' ? 0 : props.y}
+                    width={typeof props.width === 'undefined' ? "100%" : props.width}
+                    height={typeof props.height === 'undefined' ? "100%" : props.height}
+                    fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
             )
         // case "micropython":
         //     return(
@@ -211,83 +187,67 @@ export const IconSVG = props => {
         //     )
         case "cpp":
             return(
-                <svg width={props.width} height={props.height}>
-                    <Cpp x={typeof props.x === 'undefined' ? 0 : props.x}
-                        y={typeof props.y === 'undefined' ? 0 : props.y}
-                        width={typeof props.width === 'undefined' ? "100%" : props.width}
-                        height={typeof props.height === 'undefined' ? "100%" : props.height}
-                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
-                </svg>
+                <Cpp x={typeof props.x === 'undefined' ? 0 : props.x}
+                    y={typeof props.y === 'undefined' ? 0 : props.y}
+                    width={typeof props.width === 'undefined' ? "100%" : props.width}
+                    height={typeof props.height === 'undefined' ? "100%" : props.height}
+                    fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
             )
         case "csharp":
             return(
-                <svg width={props.width} height={props.height}>
-                    <CSharp x={typeof props.x === 'undefined' ? 0 : props.x}
-                        y={typeof props.y === 'undefined' ? 0 : props.y}
-                        width={typeof props.width === 'undefined' ? "100%" : props.width}
-                        height={typeof props.height === 'undefined' ? "100%" : props.height}
-                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
-                </svg>
+                <CSharp x={typeof props.x === 'undefined' ? 0 : props.x}
+                    y={typeof props.y === 'undefined' ? 0 : props.y}
+                    width={typeof props.width === 'undefined' ? "100%" : props.width}
+                    height={typeof props.height === 'undefined' ? "100%" : props.height}
+                    fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
             )
         case "python":
             return(
-                <svg width={props.width} height={props.height}>
-                    <Python x={typeof props.x === 'undefined' ? 0 : props.x}
-                        y={typeof props.y === 'undefined' ? 0 : props.y}
-                        width={typeof props.width === 'undefined' ? "100%" : props.width}
-                        height={typeof props.height === 'undefined' ? "100%" : props.height}
-                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
-                </svg>
+                <Python x={typeof props.x === 'undefined' ? 0 : props.x}
+                    y={typeof props.y === 'undefined' ? 0 : props.y}
+                    width={typeof props.width === 'undefined' ? "100%" : props.width}
+                    height={typeof props.height === 'undefined' ? "100%" : props.height}
+                    fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
         )
         case "java":
             return(
-                <svg width={props.width} height={props.height}>
-                    <Java x={typeof props.x === 'undefined' ? 0 : props.x}
-                        y={typeof props.y === 'undefined' ? 0 : props.y}
-                        width={typeof props.width === 'undefined' ? "100%" : props.width}
-                        height={typeof props.height === 'undefined' ? "100%" : props.height}
-                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
-                </svg>
+                <Java x={typeof props.x === 'undefined' ? 0 : props.x}
+                    y={typeof props.y === 'undefined' ? 0 : props.y}
+                    width={typeof props.width === 'undefined' ? "100%" : props.width}
+                    height={typeof props.height === 'undefined' ? "100%" : props.height}
+                    fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
         )
         case "javascript":
             return(
-                <svg width={props.width} height={props.height}>
-                    <Javascript x={typeof props.x === 'undefined' ? 0 : props.x}
-                        y={typeof props.y === 'undefined' ? 0 : props.y}
-                        width={typeof props.width === 'undefined' ? "100%" : props.width}
-                        height={typeof props.height === 'undefined' ? "100%" : props.height}
-                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
-                </svg>
+                <Javascript x={typeof props.x === 'undefined' ? 0 : props.x}
+                    y={typeof props.y === 'undefined' ? 0 : props.y}
+                    width={typeof props.width === 'undefined' ? "100%" : props.width}
+                    height={typeof props.height === 'undefined' ? "100%" : props.height}
+                    fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
         )
         case "typescript":
             return(
-                <svg width={props.width} height={props.height}>
-                    <Typescript x={typeof props.x === 'undefined' ? 0 : props.x}
-                        y={typeof props.y === 'undefined' ? 0 : props.y}
-                        width={typeof props.width === 'undefined' ? "100%" : props.width}
-                        height={typeof props.height === 'undefined' ? "100%" : props.height}
-                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
-                </svg>
+                <Typescript x={typeof props.x === 'undefined' ? 0 : props.x}
+                    y={typeof props.y === 'undefined' ? 0 : props.y}
+                    width={typeof props.width === 'undefined' ? "100%" : props.width}
+                    height={typeof props.height === 'undefined' ? "100%" : props.height}
+                    fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
         )
         case "image processing":
             return(
-                <svg width={props.width} height={props.height}>
-                    <ImageProcessing x={typeof props.x === 'undefined' ? 0 : props.x}
-                        y={typeof props.y === 'undefined' ? 0 : props.y}
-                        width={typeof props.width === 'undefined' ? "100%" : props.width}
-                        height={typeof props.height === 'undefined' ? "100%" : props.height}
-                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
-                </svg>
+                <ImageProcessing x={typeof props.x === 'undefined' ? 0 : props.x}
+                    y={typeof props.y === 'undefined' ? 0 : props.y}
+                    width={typeof props.width === 'undefined' ? "100%" : props.width}
+                    height={typeof props.height === 'undefined' ? "100%" : props.height}
+                    fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
         )
         case "cuda":
             return(
-                <svg width={props.width} height={props.height}>
-                    <Cuda x={typeof props.x === 'undefined' ? 0 : props.x}
-                        y={typeof props.y === 'undefined' ? 0 : props.y}
-                        width={typeof props.width === 'undefined' ? "100%" : props.width}
-                        height={typeof props.height === 'undefined' ? "100%" : props.height}
-                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
-                </svg>
+                <Cuda x={typeof props.x === 'undefined' ? 0 : props.x}
+                    y={typeof props.y === 'undefined' ? 0 : props.y}
+                    width={typeof props.width === 'undefined' ? "100%" : props.width}
+                    height={typeof props.height === 'undefined' ? "100%" : props.height}
+                    fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
         )
         case "email":
             return(

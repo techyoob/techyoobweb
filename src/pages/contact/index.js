@@ -17,11 +17,11 @@ export const Contact = props => {
 
     return (
         <section className="contacts">
-            {contacts.map((option, index)=>{
+            {contacts.map((option, i)=>{
                 return (
                     <span
                         className="contact-option-div" 
-                        key={index}
+                        key={i}
                         onClick={(e) => {
                             window.location.href=`${option.path}`;
                             }}>

@@ -14,12 +14,12 @@ export const Experience = props => {
 
     return (
         <div className="experience" style={styles.experience}>
-            {experience.map( (job, index) => {
+            {experience.map( (job, i) => {
                 return (
                     <Job 
                         {...props}
                         {...job}
-                        key={index}/>
+                        key={i}/>
                 );
             })}
         </div>
@@ -49,8 +49,8 @@ export const Job = props => {
             <div className={"job-body-div"} >
                 <h4> Roles & Accomplishments </h4>
                 <ul>
-                   {props.roles.map( (role, index) => {
-                        return <li key={index}>{role}</li>
+                   {props.roles.map( (role, i) => {
+                        return <li key={i}>{role}</li>
                     })}
                 </ul>
             </div>

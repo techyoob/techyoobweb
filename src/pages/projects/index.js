@@ -22,12 +22,12 @@ export const Projects = props => {
     return (
         
         <section className="projects" >
-            {projects.map((item, index)=>{
+            {projects.map((item, i)=>{
                 return (
                     <Project 
                         {...props}
                         item={item}
-                        key={index}/>
+                        key={i}/>
                 );
             })}
         </section>
@@ -51,20 +51,20 @@ const Project = props => {
                     </div>
                 </div>
                 <div className={"project-technologies"}>
-                    {props.item.technologies.map( tech => {
-                        return <IconSVG name={tech} x="0" y="0" width="100%" height="100%" />;
+                    {props.item.technologies.map( (tech, i) => {
+                        return <IconSVG key={i} name={tech} x="0" y="0" width="100%" height="100%" />;
                     })}
                 </div>
             </div>
             <div className={"project-footer-div"}>
-                {Object.keys(props.item.links).map( (name, index) => {
+                {Object.keys(props.item.links).map( (name, i) => {
 
                     const link = props.item.links[name]
                     
                     return (
                         <a 
                             className={"link-button-div"}
-                            key={index} 
+                            key={i} 
                             href={link}>
                             <div className={"link-button-icon"} >
                                 <LinkLoader name={name} link={link}/>

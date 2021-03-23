@@ -4,10 +4,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 
-// import { scaleLinear } from 'd3-scale'
-// import { max } from 'd3-array'
-// import { select } from 'd3-selection'
-// import * as d3 from "d3";
 
 import './skills.css'
 import techsList from '../../data/technologies.json';
@@ -34,40 +30,138 @@ import {
 } from "react-icons/fa" ;
 
 
-// import { forceLink } from 'd3';
 
 export const Skills = props => {
 
-// console.log(" props are are", props );
     return (
-        <div className="skills-div" style={styles.skillsDiv(props.isColumnRatio)}>
-            <div className="techs-div">
-                <div className="techs-title-div">
-                    <h1>TECHNOLOGIES</h1>
-                </div>
-                <div className="techs-body-div">
-		            <Techs />
-                </div>
-            </div>
-            <div className="langs-div">
-                <div className="langs-title-div">
-                    <h1>LANGUAGES</h1>
-                </div>
-                <span className="langs-body-div">
-                    <CircleList data={langsList} />
-                </span>
-            </div>
-            <div className="others-div">
-                <div className="others-title-div">
-                    <h1>OTHER</h1>
-                </div>
-                <div className="others-body-div">
-                    <CircleList data={othersList} />
-                </div>
-            </div>
+        <div className="skills-div">
+            {skills.map((item, index)=>{
+                return (
+                    <SkillCategoryBox 
+                        skillCatItem={item}
+                        key={index}/>)
+                })}
         </div>
     );
 };
+
+
+
+const SkillCategoryBox = (props) => {
+    
+    return (
+        <div className="skill-cat-box">
+            <div className="cat-box-title-div">
+                {props.skillCatItem.name}
+            </div>
+            <div className="cat-box-items-div">
+                {props.skillCatItem.children.map((skill, i)=>{
+                    return (
+                        <div className="skill-div" key={i}>
+                            <div className="skill-logo">
+                                <IconSVG
+                                    name={skill.name}
+                                    width="90%"
+                                    height="90%"
+                                    fill="#c8d421"
+                                    />
+                            </div>
+                            <span className="skill-name">
+                                {skill.name}
+                            </span>
+                        </div>
+                    )
+                })}
+            </div>
+        </div>
+        );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// export const Skills = props => {
+
+//     return (
+//         <div className="skills-div" style={styles.skillsDiv(props.isColumnRatio)}>
+//             <div className="techs-div">
+//                 <div className="techs-title-div">
+//                     <h1>TECHNOLOGIES</h1>
+//                 </div>
+//                 <div className="techs-body-div">
+// 		            <Techs />
+//                 </div>
+//             </div>
+//             <div className="langs-div">
+//                 <div className="langs-title-div">
+//                     <h1>LANGUAGES</h1>
+//                 </div>
+//                 <span className="langs-body-div">
+//                     <CircleList data={langsList} />
+//                 </span>
+//             </div>
+//             <div className="others-div">
+//                 <div className="others-title-div">
+//                     <h1>OTHER</h1>
+//                 </div>
+//                 <div className="others-body-div">
+//                     <CircleList data={othersList} />
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// };
 
 
 export const Techs = props => {

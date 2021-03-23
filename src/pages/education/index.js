@@ -30,12 +30,12 @@ export const Education = props => {
 
     return (
         <section className="education" style={styles.education}>
-            {education.map((school, index)=>{
+            {education.map((school, i)=>{
                 return (
                     <div
                         className="school-div"
-                        key={school.id} 
-                        style={{flexDirection:props.isColumnRatio ? "row" : (index % 2===0) ? "row" : "row-reverse"}}>
+                        key={i} 
+                        style={{flexDirection:props.isColumnRatio ? "row" : (i % 2===0) ? "row" : "row-reverse"}}>
                         <div 
                             className="school-logo-div"
                             style={{display:props.isColumnRatio ? "none" : "flex"}}>

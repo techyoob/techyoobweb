@@ -1,82 +1,60 @@
- {
-     "technologies":{
-         "nodes":[
-            { "id":"fs", "name":"fullstack", "size":35, "color":"red" },
-            { "id":"s1", "name":"frontend", "size":30, "color":"yellow" },
-            { "id":"s2", "name":"backend", "size":30, "color":"yellow" },
-            { "id":"s3", "name":"database", "size":30, "color":"yellow" },
-            { "id":"s4", "name":"iot", "size":30, "color":"yellow" },
-            { "id":"s5", "name":"mobile", "size":30,  "color":"yellow" },
-            { "id":"s1s1", "name":"react", "size":25, "color":"green" },
-            { "id":"s1s2", "name":"html", "size":25, "color":"green" },
-            { "id":"s1s3", "name":"css", "size":25, "color":"green" },
-            {
-                "id":"s2s1",
-                "name":"nodejs",
-                "size":25,
-                "color":"green"
-            },{
-                "id":"s2s2",
-                "name":".net",
-                "size":25,
-                "color":"green"
-            },{
-                "id":"s3s1",
-                "name":"mongodb",
-                "size":25,
-                "color":"green"
-            },{
-                "id":"s3s2",
-                "name":"mysql",
-                "size":25,
-                "color":"green"
-            },{
-                "id":"s4s1",
-                "name":"arduino",
-                "size":25,
-                "color":"green"
-            },{
-                "id":"s4s2",
-                "name":"ti",
-                "size":25,
-                "color":"green"
-            },{
-                "id":"s5s1",
-                "name":"reactnative",
-                "size":25,
-                "color":"green"
-            },{
-                "id":"s5s2",
-                "name":"android",
-                "size":25,
-                "color":"green"
-            },{
-                "id":"s5s3",
-                "name":"ios",
-                "size":25,
-                "color":"green"
-            }
-         ],
-         "links":[
-            {"id":1, "target": "fs", "source":"s1" },
-            {"id":2, "target": "fs", "source":"s2"},
-            {"id":3, "target": "fs", "source":"s3"},
-            {"id":4, "target": "fs", "source":"s4"},
-            {"id":5, "target": "fs", "source":"s5"},
-            {"id":6, "target": "s1", "source":"s1s1"},
-            {"id":7, "target": "s1", "source":"s1s2"},
-            {"id":8, "target": "s1", "source":"s1s3"},
-            {"id":9, "target": "s2", "source":"s2s1"},
-            {"id":10, "target": "s2", "source":"s2s2"},
-            {"id":11, "target": "s3", "source":"s3s1"},
-            {"id":12, "target": "s3", "source":"s3s2"},
-            {"id":13, "target": "s4", "source":"s4s1"},
-            {"id":14, "target": "s4", "source":"s4s2"},
-            {"id":15, "target": "s5", "source":"s5s1"},
-            {"id":16, "target": "s5", "source":"s5s2"},
-            {"id":17, "target": "s5", "source":"s5s3"}
-         ]
-     },
-     "languages":["", "", ""],
-     "other":["", "", ""]
- }
+[
+    {
+        "name":"front end",
+        "children":[
+            { "name":"react" },
+            { "name":"html" },
+            { "name":"css" },
+            { "name":"d3.js" }
+        ]
+    },
+    {
+        "name":"back end",
+        "children":[
+            {"name":"nodejs"},
+            {"name":".net"},
+            {"name":"express.js"}
+        ]
+    },
+    {
+        "name":"database",
+        "children":[
+            {"name":"mongodb"},
+            {"name":"mysql"}
+        ]
+    },
+    {
+        "name":"mobile",
+        "children":[
+            {"name":"react native"},
+            {"name":"android"},
+            {"name":"ios"}
+        ]
+    },
+    {
+        "name":"iot",
+        "children":[
+            {"name":"arduino"},
+            {"name":"texas instruments"}
+        ]
+    },
+    {
+        "name":"languages",
+        "children":[
+            {"name":"csharp"},
+            {"name":"cpp"},
+            {"name":"java"},
+            {"name":"javascript"},
+            {"name":"python"},
+            {"name":"typescript"}
+            
+        ]
+    },
+    {
+        "name":"other",
+        "children":[
+            {"name":"image processing"},
+            {"name":"cuda"}
+        ]
+    }    
+]
