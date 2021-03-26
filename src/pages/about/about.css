@@ -1,26 +1,113 @@
 
 
-.about {
+.about-page {
     display: flex;
     flex: 1;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     min-height: 500px;
     color: black;
-    background-color: #4d5e66;
+    background-color: #eeedf2;
 }
 
-
-.about-text-div {
+.bio-div {
+    display: flex;
+    flex-direction: row;
+    height: auto;
     width: 80%;
-    height: 80%;
-    color: #333;
-    border-radius: 10px;
-    padding: 20px;
-    font-family: "Patrick Hand","Fira Code","Fira Mono","Roboto Mono",monospace;
-    font-size:clamp(10px, 1.5vw, 18px );
-    box-shadow: 0px 0px 8px 1px #bebebe;
-    background-image: url("../../assets/bg.png");
-    background-repeat: repeat;
 }
+
+.picture-div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 360px;
+    width: 260px;
+    box-shadow: -10px -10px 0px 0px #8fb8da;
+    background-color: #7469b3;
+}
+
+.ayoub-about-img {
+    width:85%;
+    height:85%;
+    transform: rotate(3deg);
+}
+
+.picture-div-mobile {
+    display: none;
+}
+
+
+.bio-details-div {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    color: #333;
+    margin-left: 40px;
+}
+
+.bio-details-div h3{
+    font-size: 1.8vw;
+    margin-bottom: 40px;
+}
+
+.bio-details-div p{
+    font-size: 1.2vw;
+}
+
+@media screen and (max-width: 1140px) {
+    .bio-div {
+        flex-direction: column;
+    }
+    .picture-div {
+        display: none;
+    }
+    .picture-div-mobile {
+        display: flex;
+        margin-bottom: 50px;
+        margin-top: 10px;
+    }
+    .bio-details-div h3{
+        font-size: 2.2vw;
+    }
+    
+    .bio-details-div p{
+        font-size: 1.5vw;
+    }
+    
+    
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .bio-div {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .bio-details-div{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    .bio-details-div h3{
+        font-size: 5vw;
+        margin-left: 0px;
+    }
+    
+    .bio-details-div p{
+        font-size: 2.8vw;
+    }
+}
+
+

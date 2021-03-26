@@ -47,6 +47,9 @@ import { ReactComponent  as Email } from './email.svg';
 import { ReactComponent  as LinkedIn } from './linkedin.svg';
 
 
+import { ReactComponent  as BioVector } from './bio_illustrations.svg';
+
+
 
 
 export const IconSVG = props => {
@@ -265,6 +268,12 @@ export const IconSVG = props => {
             return(
                 <svg width={props.width} height={props.height}>
                     <LinkedIn x={"0%"} y={"0%"} width={"100%"} height={props.height}/>
+                </svg>
+        )
+        case "bio vector":
+            return(
+                <svg width={props.width} height={props.height}>
+                    <BioVector x={"0%"} y={"0%"} width={"100%"} height={props.height}/>
                 </svg>
         )
         default:

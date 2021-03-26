@@ -188,22 +188,19 @@ export const PageProvider = props => {
         <div 
             className={`page`}
             ref={pageRef}>
-             <span 
-                className={`${props.name}-page-header`}
+             <span className={`${props.name}-page-header`}
                 onClick={collapsePage}>
                 <div className="title-div">
                     <h1>
                         {`${props.name.toUpperCase()}`}
                     </h1>
                 </div>
-                <div 
-                    className="collapse-icon-div"
+                <div className="collapse-icon-div"
                     style={styles.collapseIconDiv(props.isColumnRatio)}>
                      {isCollapsed ? <FaChevronDown /> : <FaChevronUp /> }
                 </div>
              </span>
-             <div 
-                className={'page-body'} 
+             <div className={'page-body'} 
                 style={props.name != "home" ? styles.pageBody(props.isColumnRatio && isCollapsed) : {paddingTop:"0px", paddingBottom:"0px"}}>
                 {props.children}
              </div>
