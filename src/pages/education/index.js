@@ -32,17 +32,14 @@ export const Education = props => {
         <section className="education" style={styles.education}>
             {education.map((school, i)=>{
                 return (
-                    <div
-                        className="school-div"
+                    <div className="school-div"
                         key={i} 
                         style={{flexDirection:props.isColumnRatio ? "row" : (i % 2===0) ? "row" : "row-reverse"}}>
-                        <div 
-                            className="school-logo-div"
+                        <div  className="school-logo-div"
                             style={{display:props.isColumnRatio ? "none" : "flex"}}>
 
                         </div>
-                        <div 
-                            className="school-timeline-div"
+                        <div  className="school-timeline-div"
                             ref={timelineRef}>
                             <svg 
                                 width={timelineSize.w}

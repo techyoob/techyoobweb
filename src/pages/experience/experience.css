@@ -6,11 +6,234 @@
     justify-content: center;
     align-items: center;
     min-height: 390px;
-    background-color: #a6afb6;
+    background-color: #c3c3c3;
     width: 100%;
 }
 
 
+.timeline-container {
+    width: 85%;
+    height: auto;
+    margin-bottom:50px;
+    margin-top: 50px;
+}
+
+.timeline-item-container-even, .timeline-item-container-odd {
+    display: flex;
+    height: auto;
+}
+
+.timeline-item-container-even {
+    flex-direction: row-reverse;
+}
+
+.timeline-item-container-odd {
+    flex-direction: row;
+}
+
+
+.item-logo {
+    flex: 8;
+}
+
+.item-timeline-vector {
+    display: flex;
+    flex: 1;
+    min-width: 35px;
+}
+
+
+
+.item-content {
+    flex: 8;
+}
+
+.info-box {
+    width: 100%;
+    border-radius: 10px;
+    overflow-x: hidden;
+    margin-bottom: 50px;
+    background-color: #f0f0f0;
+}
+
+
+
+.job-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.job-title {
+    margin-bottom: 10px;
+    padding-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-weight: bold;
+    font-size: 1.2vw;
+    background-color: #7593b9;
+}
+
+.job-name {
+    display: flex;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.job-name span{
+    margin-right: 30px;
+}
+
+.job-roles {
+    font-size: 0.9vw;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+.job-roles li{
+    margin-bottom: 15px;
+}
+
+
+.job-footer {
+    display: flex;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.job-location {
+    flex: 1;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+.job-period {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 0.8vw;
+    flex: 1;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1400px) {
+    .timeline-container {
+        width: 90%;
+    }
+    .job-title {
+        font-size: 1.6vw;
+    }
+    .job-location {
+        font-size: 1.2vw;
+    }
+    .job-period {
+        font-size: 1vw;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width: 1150px) {
+    .timeline-item-container-even, .timeline-item-container-odd {
+        flex-direction: row;
+    }
+    .item-logo {
+        display: none;
+    }
+    .job-title {
+        font-size: 1.8vw;
+    }    
+    .job-roles {
+        font-size: 1.1vw;
+    }
+    .job-location {
+        font-size: 1.2vw;
+    }
+    .job-period {
+        font-size: 1vw;
+    }
+    
+    
+}
+
+@media screen and (max-width: 800px) {
+
+    .job-title {
+        font-size: 2.4vw;
+    }
+    .job-name {
+        font-size: 1.8vw;
+    }    
+    .job-roles {
+        font-size: 1.6vw;
+    }
+    .job-location {
+        font-size: 1.8vw;
+    }
+    .job-period {
+        font-size: 1.6vw;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .timeline-container {
+        width: 90%;
+    }
+    .job-title {
+        font-size: 3.6vw;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    .job-name {
+        font-size: 3vw;
+    }
+    .job-roles {
+        font-size: 3vw;
+    }
+    .job-location {
+        font-size: 3vw;
+        font-weight:700;
+    }
+    .job-period {
+        font-size: 2vw;
+        justify-content: flex-start;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .job-div {
     display: flex;
     flex-direction: column;
@@ -128,7 +351,7 @@
     }
     
   }
-  
+   */
   
   
   

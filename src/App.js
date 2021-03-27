@@ -7,14 +7,14 @@ import './App.css';
 import { Header }  from './header';
 import { Pages } from './pages';
 
-// const menuItems = ['home', 'about', 'experience','projects','skills', 'education','contact', 'blog', 'resume' ]
 
-const menuItems = ['home', 'about', 'experience', 'projects', 'skills', 'education', 'contact', 'resume']
+// const menuItems = ['home', 'about', 'experience', 'education', 'skills', 'projects', 'blog', 'contact', 'resume']
+const menuItems = ['home', 'about', 'experience', 'education', 'skills', 'projects', 'contact', 'resume']
 
 
 function App() {
 
-  const [ selectedItem, setSelectedItem] = useState("about");
+  const [ selectedItem, setSelectedItem] = useState("experience");
 
   function navigate(name){  
     setSelectedItem(name);
