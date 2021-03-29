@@ -74,22 +74,20 @@ export const Job = props => {
 
     return(
         <div className={"job-container"}>
-            <span className="job-title">
-                {props.item.position}
-            </span>
+            <h2> {props.item.position} </h2>
             <div className="job-name">
                 <span> {props.item.name} </span>
                 {'link' in props.item
                     ?   <a href={props.item.link} >
                             <FaLink  />   
                         </a>
-                    :   null }
-
+                    :   null 
+                }
             </div>
             <span className="job-roles">
                 <ul>
                     {props.item?.roles.map( (role, i) => {
-                         return <li key={i}>{role}</li>
+                         return <li key={i}><h4>{role}</h4></li>
                      })}
                 </ul>
             </span>            

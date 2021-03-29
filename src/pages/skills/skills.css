@@ -1,14 +1,115 @@
 .skills-div {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: auto;
     width: 100%;
-    min-height: 470px;
+    height: 70vh;
     background-color: #4d5e66;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
 }
+
+
+.slider-container-div {
+    width: 80%;
+    margin-top: 50px;
+}
+
+.slider-item-container {
+    display: flex;
+    width: 300px;
+}
+
+
+.slider-item-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    border-radius: 10px;
+    overflow-x: hidden;
+    background-color: #cacaca;
+
+}
+
+
+.slider-item-title-div {
+    height: 50px;
+    width: 100%;
+    background-color: #775786;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    color:#cacaca;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.skills-slidde-show {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px 300px 300px 300px;
+    width: 85%;
+    height: auto;
+    background-color: gold;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.skills-slidde-show::-webkit-scrollbar { 
+    display: none;  /* Chrome Safari */
+   }
+
+
+.skill-cat-box {
+    width:95%;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #6d536d;
+}
+
+
+
+
+
 
 
 .skills-div h2{    
@@ -17,14 +118,7 @@
 }
 
 
-.skill-cat-box {
-    width: 200px;
-    border-radius: 20px;
-    overflow: hidden;
-    background-color: #6d536d;
-    margin-bottom: 60px;
-    margin-top: 30px;
-}
+
 
 .cat-box-title-div {
     height: 50px;
@@ -65,13 +159,13 @@
     width: 60px;
     margin-bottom: 8px;
     border-radius: 5px;
-    border: 3px solid #eec643;
+    border: 3px solid #775786;
 }
 
 .skill-name {
     font-size: 10px;
     font-weight: 700;
-    color: #eec643;
+    color: #775786;
     text-transform: capitalize;
 }
 

@@ -66,6 +66,20 @@
     margin-left: 25px;
 }
 
+.job-container h2{
+    font-weight: bold;
+    background-color: #7593b9;
+    font-size: clamp(12px, 1.1rem, 19px);
+    
+}
+
+.job-container h4{
+    margin: 0;
+    font-weight: normal;
+    font-size: clamp(9px, 0.9rem, 15px);
+}
+
+
 .job-title {
     margin-bottom: 10px;
     padding-left: 15px;

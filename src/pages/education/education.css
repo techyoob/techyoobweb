@@ -4,12 +4,59 @@
 .education {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    padding-top: 5%;
     justify-content: center;
+    align-items: center;
+    min-height: 390px;
+    width: 100%;
     background-color: #86949f;
 }
+
+.school-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.school-container h2{
+    font-weight: bold;
+    background-color: #deb887;
+    font-size: clamp(12px, 1.1rem, 19px);
+    
+}
+
+.school-container h4{
+    margin: 0;
+    font-weight: normal;
+    font-size: clamp(9px, 0.9rem, 15px);
+}
+
+.school-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .school-div {
     display: flex;
@@ -61,12 +108,6 @@
     font-size: clamp(8px,1.0rem, 13px);
 }
 
-.school-loc-grad {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-right: 5%;
-}
 
 
 

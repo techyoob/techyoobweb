@@ -12,14 +12,13 @@ import othersList from '../../data/others.json';
 import { IconSVG } from '../../svgs'
 
 
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+
 import skills from '../../data/skills.json'
 import graph from '../../data/graphs.json'
-// import { IconSVG } from '../svgs/index.js'
 
-
-import testData from '../../data/testData.json'
-
-// import { ReactComponent  as FullStack } from '../svgs/fullstack.svg';
 
 
 import { 
@@ -28,54 +27,149 @@ import {
     FaGithub,
     FaLink,
 } from "react-icons/fa" ;
+// import { useSideScroll } from "./useSideScroll";
 
+import Carousel from "../../components/carousel.js";
 
 
 export const Skills = props => {
 
+    const skillsRef = useRef(null)
+    const [slides, setSlides] = useState(3)
+
+    useEffect(() => {
+        const resizeListener = () => {            
+        
+            const newSlides = Math.floor(window.innerWidth/395) + 1
+            setSlides(newSlides)            
+        };
+        resizeListener()
+        
+        window.addEventListener('resize', resizeListener);
+    
+        return () => {
+          window.removeEventListener('resize', resizeListener);
+        }
+      }, [])
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: slides,
+        slidesToScroll: 1
+      };
+
+
     return (
-        <div className="skills-div">
-            {skills.map((item, index)=>{
-                return (
-                    <SkillCategoryBox 
-                        skillCatItem={item}
-                        key={index}/>)
-                })}
+
+        
+        <div className="skills-div"
+            ref={skillsRef}>
+
+            <div className="slider-container-div">
+                <Slider {...settings}>
+                    {skills?.map((item, i)=>{                        
+                    return (
+                        <div className="slider-item-container"
+                            key={i}>
+                                <div className="slider-item-box">
+                                    <div className="slider-item-title-div">
+                                        {item.name}
+                                    </div>
+                                    <div className="cat-box-items-div">
+                                        {item.children.map((skill, j)=>{
+                                            return (
+                                                <div className="skill-div" key={j}>
+                                                    <div className="skill-logo">
+                                                        <IconSVG name={skill.name}
+                                                            width="90%"
+                                                            height="90%"
+                                                            fill="#775786"/>
+                                                    </div>
+                                                    <span className="skill-name">
+                                                        {skill.name}
+                                                    </span>
+                                                </div>
+                                            )
+                                        })}
+                                </div>
+                                </div>                                    
+                        </div>
+                    )
+                    })}
+                </Slider>
+            </div>
         </div>
     );
 };
 
 
-
-const SkillCategoryBox = (props) => {
+const SkillSlideShow = (props) => {
     
     return (
-        <div className="skill-cat-box">
-            <div className="cat-box-title-div">
-                {props.skillCatItem.name}
-            </div>
-            <div className="cat-box-items-div">
-                {props.skillCatItem.children.map((skill, i)=>{
-                    return (
-                        <div className="skill-div" key={i}>
-                            <div className="skill-logo">
-                                <IconSVG
-                                    name={skill.name}
-                                    width="90%"
-                                    height="90%"
-                                    fill="#eec643"
-                                    />
-                            </div>
-                            <span className="skill-name">
-                                {skill.name}
-                            </span>
-                        </div>
-                    )
-                })}
-            </div>
+        <div className="skills-slide-show">
+            {props.data?.map((item, i)=>{
+                
+                return (
+                    <div className="skill-cat-box" key={i}>
+                        
+                    </div>
+                )
+            })}
         </div>
         );
 }
+
+
+
+
+
+// export const Skills = props => {
+
+//     return (
+//         <div className="skills-div">
+//             {skills.map((item, index)=>{
+//                 return (
+//                     <SkillSlideShow
+//                         skillCatItem={item}
+//                         key={index}/>)
+//                 })}
+//         </div>
+//     );
+// };
+
+
+
+// const SkillSlideShow = (props) => {
+    
+//     return (
+//         <div className="skill-cat-box">
+//             <div className="cat-box-title-div">
+//                 {props.skillCatItem.name}
+//             </div>
+//             <div className="cat-box-items-div">
+//                 {props.skillCatItem.children.map((skill, i)=>{
+//                     return (
+//                         <div className="skill-div" key={i}>
+//                             <div className="skill-logo">
+//                                 <IconSVG
+//                                     name={skill.name}
+//                                     width="90%"
+//                                     height="90%"
+//                                     fill="#eec643"
+//                                     />
+//                             </div>
+//                             <span className="skill-name">
+//                                 {skill.name}
+//                             </span>
+//                         </div>
+//                     )
+//                 })}
+//             </div>
+//         </div>
+//         );
+// }
 
 
 
