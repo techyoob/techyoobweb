@@ -254,27 +254,39 @@ export const IconSVG = props => {
         )
         case "email":
             return(
-                <svg width={props.width} height={props.height}>
-                    <Email x={"0%"} y={"0%"} width={"100%"} height={props.height}/>
-                </svg>
+                <Email x={typeof props.x === 'undefined' ? 0 : props.x}
+                    y={typeof props.y === 'undefined' ? 0 : props.y}
+                    width={typeof props.width === 'undefined' ? "100%" : props.width}
+                    height={typeof props.height === 'undefined' ? "100%" : props.height}
+                    fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
+               
         )
         case "github":
             return(
-                <svg width={props.width} height={props.height}>
-                    <GitHub x={"0%"} y={"0%"} width={"100%"} height={props.height}/>
-                </svg>
+                <GitHub x={typeof props.x === 'undefined' ? 0 : props.x}
+                    y={typeof props.y === 'undefined' ? 0 : props.y}
+                    width={typeof props.width === 'undefined' ? "100%" : props.width}
+                    height={typeof props.height === 'undefined' ? "100%" : props.height}
+                    fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
+                
         )
         case "linkedin":
             return(
-                <svg width={props.width} height={props.height}>
-                    <LinkedIn x={"0%"} y={"0%"} width={"100%"} height={props.height}/>
-                </svg>
+                <LinkedIn x={typeof props.x === 'undefined' ? 0 : props.x}
+                        y={typeof props.y === 'undefined' ? 0 : props.y}
+                        width={typeof props.width === 'undefined' ? "100%" : props.width}
+                        height={typeof props.height === 'undefined' ? "100%" : props.height}
+                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
+               
         )
         case "bio vector":
             return(
-                <svg width={props.width} height={props.height}>
-                    <BioVector x={"0%"} y={"0%"} width={"100%"} height={props.height}/>
-                </svg>
+                <BioVector x={typeof props.x === 'undefined' ? 0 : props.x}
+                    y={typeof props.y === 'undefined' ? 0 : props.y}
+                    width={typeof props.width === 'undefined' ? "100%" : props.width}
+                    height={typeof props.height === 'undefined' ? "100%" : props.height}
+                    fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
+               
         )
         default:
             return null;

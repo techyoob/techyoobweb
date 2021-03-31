@@ -88,7 +88,7 @@ const MenuBadge = (props) => {
         <div className="badge-div"
             onClick={()=>props.onItemSelect("home")}>
             <div className="badge-logo-div"> 
-                <IconSVG name={'full stack'} width="70%" height="70%"/>
+                <IconSVG name={'full stack'} fill="#86acbe" width="70%" height="70%"/>
             </div>
             <div className="badge-title-div"> 
                 Full Stack

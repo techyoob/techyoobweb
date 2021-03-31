@@ -13,7 +13,7 @@ export const About = props => {
 
 
     return (
-        <div className="about-page" >
+        <div className="about-page">
             <div className="bio-div">
                 <div className="picture-div">
                     <MyPicture />
