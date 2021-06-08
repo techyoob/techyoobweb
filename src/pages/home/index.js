@@ -108,7 +108,7 @@ const BriefBioText = props => {
                     />
                 </div>
                 <div className="text-IV-div">
-                    I believe that the broader the perspective, the greater the creativity
+                    The broader the perspective, the greater the creativity
                 </div>
                 <div className="contact-button-div">
                     <button

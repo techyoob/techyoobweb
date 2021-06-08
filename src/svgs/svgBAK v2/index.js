@@ -191,7 +191,7 @@ export const IconSVG = props => {
                 <Typescript x={"25%"} y={props.y} width={"50%"} height={props.height}/>
             </svg>
         )
-        case "image processing":
+        case "computer vision":
             return(
                 <svg width={props.width} height={props.height}>
                     <ImageProcessing x={"25%"} y={"5%"} width={"50%"} height={props.height}/>

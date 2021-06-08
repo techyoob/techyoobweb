@@ -236,7 +236,7 @@ export const IconSVG = props => {
                     height={typeof props.height === 'undefined' ? "100%" : props.height}
                     fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
         )
-        case "image processing":
+        case "computer vision":
             return(
                 <ImageProcessing x={typeof props.x === 'undefined' ? 0 : props.x}
                     y={typeof props.y === 'undefined' ? 0 : props.y}

@@ -66,7 +66,7 @@
     font-size: 5vw;
     margin-right: 15px;
     margin-bottom: 1vw;
-    color: #1F7EBF;
+    color: #457c99;
 }
 
 .text-III-div {    
@@ -80,6 +80,7 @@
 .text-IV-div {
     flex: 1;
     color: #646e64;
+    margin-top: 10px;
     margin-bottom: 1.5vw;
 }
 
@@ -101,7 +102,7 @@
     width: 110px;
     min-width: 100px;
     border-radius: 5px;
-    background-color: #1F7EBF;
+    background-color: #457c99;
     color: #cacaca;
     text-align: center;
     text-decoration: none;
@@ -130,8 +131,8 @@
     align-self: center;
     height: 4.5vw;
     width: 100%;
-    color: #F6865C;
-    border-top: 1px solid #F6865C;
+    color: #cc8673;
+    border-top: 1px solid #cc8673;
 }
 
 .social-btn {

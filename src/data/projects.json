@@ -9,38 +9,20 @@
         }
     },
     {
-        "name":"Techyoob Web",
-        "description":"Techyoob Web is single webpage portoflio application ( beta version ) for my engineering journey. It was built using React, CSS and SVG",
-        "technologies":["react", "css", "html", "nodejs", "es6"],
+        "name":"US Elections in Motion",
+        "description":"US Election in Motion is a project was built while tutoring a client for Reactjs, Nodejs and MongoDB. It uses historical data to render an animated colored map per state per winner party for all previous us elections.",
+        "technologies":["react", "css", "html", "nodejs", "es6", "mongodb"],
         "links":{
-            "GitHub":"https://github.com/techyoob/techyoobweb",
+            "GitHub":"https://github.com/nmouahbi/electionmap",
             "Demo":"http://www.techyoob.com/"
         }
     },
     {
-        "name":"Techyoob Web",
-        "description":"Techyoob Web is single webpage portoflio application ( beta version ) for my engineering journey. It was built using React, CSS and SVG",
-        "technologies":["react", "css", "html", "nodejs", "es6"],
+        "name":"BB Stock Screener",
+        "description":"BB Stock Screener is full stack solution that sift through thousands of stocks in the U.S to identify patterns and behaviors in a fashion that helps individual investors to rationalize their emotional decisions.",
+        "technologies":["react", "css", "html", "nodejs", "es6", "flask", "python", "mongodb"],
         "links":{
-            "GitHub":"https://github.com/techyoob/techyoobweb",
-            "Demo":"http://www.techyoob.com/"
-        }
-    },
-    {
-        "name":"Techyoob Web",
-        "description":"Techyoob Web is single webpage portoflio application ( beta version ) for my engineering journey. It was built using React, CSS and SVG",
-        "technologies":["react", "css", "html", "nodejs", "es6"],
-        "links":{
-            "GitHub":"https://github.com/techyoob/techyoobweb",
-            "Demo":"http://www.techyoob.com/"
-        }
-    },
-    {
-        "name":"Techyoob Web",
-        "description":"Techyoob Web is single webpage portoflio application ( beta version ) for my engineering journey. It was built using React, CSS and SVG",
-        "technologies":["react", "css", "html", "nodejs", "es6"],
-        "links":{
-            "GitHub":"https://github.com/techyoob/techyoobweb",
+            "GitHub":"https://github.com/techyoob/big_bang_screener_ui_react",
             "Demo":"http://www.techyoob.com/"
         }
     }
