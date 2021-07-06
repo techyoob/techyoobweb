@@ -19,7 +19,7 @@ function App() {
   function navigate(name){  
     setSelectedItem(name);
   }
-  
+
 
 
   return (

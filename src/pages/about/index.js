@@ -5,7 +5,7 @@ import React, { useRef, useEffect } from 'react';
 import './about.css';
 
 import about from '../../assets/jsons/about.json'
-import Ayoub from '../../assets/ayoub.soud.jpg'
+import Ayoub from '../../assets/imgs/ayoub.soud.jpg'
 
 
 
@@ -55,5 +55,4 @@ const MyPicture = (props) => {
 const styles = {
     aboutTextDiv: smallScreen =>({
     }),
-  };
-  
+};

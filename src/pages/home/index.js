@@ -2,8 +2,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 
-import IntroLogo from '../../assets/fullstack.engineer.logo.png';
-import BackgroundImg from '../../assets/bg.jpg';
 
 import './home.css'
 
@@ -81,7 +79,6 @@ export const Home = props => {
 
 
 
-{/* <BriefBioText {...props}/> */ }
 
 const BriefBioText = props => {
 
@@ -149,96 +146,6 @@ const BriefBioText = props => {
         </div>
     );
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-export const BriefBioLogo = props => {
-
-    const introLogoRef = useRef(null);
-    const [viewBox, setViewBox] = useState({ x0: -50, y0: -50, width: 500, height: 500 });
-
-    useEffect(() => {
-
-        function handleViewBoxResize() {
-
-            if (introLogoRef.current) {
-
-                const canvas = introLogoRef.current.getBoundingClientRect()
-
-                console.log(" wwidth and height are ", canvas.width, "  and ", canvas.height);
-
-                const coordScale = Math.min(canvas.width, canvas.height)
-
-                setViewBox({
-                    ...viewBox,
-                    width: coordScale,
-                    height: coordScale,
-                    x0: -canvas.width / 2,
-                    y0: -canvas.height / 2
-                })
-
-
-            }
-
-        }
-
-        window.addEventListener("resize", handleViewBoxResize);
-
-        handleViewBoxResize();
-
-        return () => window.removeEventListener("resize", handleViewBoxResize);
-
-    }, []);
-
-
-
-
-
-
-    return (
-        <div className="intro-logo-div" style={styles.briefBioLogoDiv}>
-            <img
-                src={IntroLogo}
-                alt="fullstack intro graph, ayoub soud" />
-        </div>
-    );
-};
-
-
-
-
-
 
 
 

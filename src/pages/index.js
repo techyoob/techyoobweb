@@ -19,9 +19,6 @@ import { Contact } from './contact';
 import { Blog } from './blog';
 
 
-// import bg from './bg.png';
-
-// import background from './background.jpg';
 
 export const Pages = props => {
    
@@ -38,8 +35,6 @@ export const Pages = props => {
                 const canvas =  pagesBoxRef.current.getBoundingClientRect()
                 const ratio = canvas.width / canvas.height;
                 
-                // console.log(" width is ", canvas.width, " height ", canvas.height, " ratio is ", ratio);
-
                 if(ratio <  0.72){
                     setIsColumnRatio(true)
                 } else {
@@ -157,7 +152,7 @@ const PageLoader = props => {
 export const PageProvider = props => {
 
     const pageRef = useRef(null)
-    const [isCollapsed, setIsCollapsed] = useState(true);
+    const [isCollapsed, setIsCollapsed] = useState(false);
 
 
     const collapsePage = () => {
@@ -185,16 +180,11 @@ export const PageProvider = props => {
         <div 
             className={`page`}
             ref={pageRef}>
-             <span className={`${props.name}-page-header`}
-                onClick={collapsePage}>
+             <span className={`${props.name}-page-header`}>
                 <div className="title-div">
                     <h1>
                         {`${props.name.toUpperCase()}`}
                     </h1>
-                </div>
-                <div className="collapse-icon-div"
-                    style={styles.collapseIconDiv(props.isColumnRatio)}>
-                     {isCollapsed ? <FaChevronDown /> : <FaChevronUp /> }
                 </div>
              </span>
              <div className={'page-body'} 
