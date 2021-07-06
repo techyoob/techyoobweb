@@ -18,11 +18,11 @@
         }
     },
     {
-        "name":"BB Stock Screener",
-        "description":"BB Stock Screener is full stack solution that sift through thousands of stocks in the U.S to identify patterns and behaviors in a fashion that helps individual investors to rationalize their emotional decisions.",
+        "name":"Trading Screener",
+        "description":"Trading Screener is full stack solution that sift through thousands of stocks in the U.S to identify patterns and behaviors in a fashion that helps individual investors to rationalize their emotional decisions.",
         "technologies":["react", "css", "html", "nodejs", "es6", "flask", "python", "mongodb"],
         "links":{
-            "GitHub":"https://github.com/techyoob/big_bang_screener_ui_react",
+            "GitHub":"https://github.com/techyoob/trading_screener",
             "Demo":"http://www.techyoob.com/"
         }
     }

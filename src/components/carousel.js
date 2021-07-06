@@ -10,7 +10,6 @@ import {
     FaAngleDoubleRight,
 } from "react-icons/fa";
 
-import useOnScreen from '../tools/isOnscreenHook.js'
 
 const Carousel = (props) => {
 

@@ -6,9 +6,9 @@ import React, { useState, useRef, useEffect } from 'react';
 
 
 import './skills.css'
-import techsList from '../../data/technologies.json';
-import langsList from '../../data/languages.json';
-import othersList from '../../data/others.json';
+import techsList from '../../assets/jsons/technologies.json';
+import langsList from '../../assets/jsons/languages.json';
+import othersList from '../../assets/jsons/others.json';
 import { IconSVG } from '../../svgs'
 
 
@@ -16,17 +16,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-import skills from '../../data/skills.json'
-import graph from '../../data/graphs.json'
+import skills from '../../assets/jsons/skills.json'
+import graph from '../../assets/jsons/graphs.json'
 
-
-
-// import { 
-//     FaReact,
-//     FaLinkedin,
-//     FaGithub,
-//     FaLink,
-// } from "react-icons/fa" ;
 
 import { 
     FaAngleDoubleLeft,

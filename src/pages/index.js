@@ -181,9 +181,6 @@ export const PageProvider = props => {
     }, [props.selectedItem])
 
 
-// console.log(" PageProvider props are ", props);
-
-
     return (
         <div 
             className={`page`}

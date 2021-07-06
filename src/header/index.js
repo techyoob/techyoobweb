@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import './header.css';
 import { IoMdClose, IoMdMenu } from "react-icons/io";
 
-import { Menu } from '../menu';
+import { Menu } from './menu';
 
 
 import { ReactComponent  as FullStack } from '../svgs/fullstack.svg';

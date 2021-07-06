@@ -4,7 +4,7 @@ import React, { useRef, useEffect } from 'react';
 
 import './projects.css'
 
-import projects from '../../data/projects.json';
+import projects from '../../assets/jsons/projects.json';
 import { IconSVG } from '../../svgs'
 // import { ReactComponent  as Mongodb } from '../svgs/mongodb.svg'; 
 

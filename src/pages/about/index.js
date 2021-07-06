@@ -4,7 +4,7 @@
 import React, { useRef, useEffect } from 'react';
 import './about.css';
 
-import about from '../../data/about.json'
+import about from '../../assets/jsons/about.json'
 import Ayoub from '../../assets/ayoub.soud.jpg'
 
 
