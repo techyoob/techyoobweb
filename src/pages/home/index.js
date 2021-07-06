@@ -22,7 +22,7 @@ import {
 } from "react-icons/fi";
 
 
-import { IconSVG } from '../../svgs'
+import { IconSVG } from '../../assets/svgs'
 
 
 

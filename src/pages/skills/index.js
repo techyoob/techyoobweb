@@ -9,7 +9,7 @@ import './skills.css'
 import techsList from '../../assets/jsons/technologies.json';
 import langsList from '../../assets/jsons/languages.json';
 import othersList from '../../assets/jsons/others.json';
-import { IconSVG } from '../../svgs'
+import { IconSVG } from '../../assets/svgs'
 
 
 import "slick-carousel/slick/slick.css"; 

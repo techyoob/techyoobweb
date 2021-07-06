@@ -4,7 +4,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import './education.css';
 
 import education from '../../assets/jsons/education.json';
-import { IconSVG } from '../../svgs';
+import { IconSVG } from '../../assets/svgs';
 
 
 import { 

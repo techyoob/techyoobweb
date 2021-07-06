@@ -5,13 +5,10 @@ import React, { useRef, useEffect } from 'react';
 import './projects.css'
 
 import projects from '../../assets/jsons/projects.json';
-import { IconSVG } from '../../svgs'
-// import { ReactComponent  as Mongodb } from '../svgs/mongodb.svg'; 
+import { IconSVG } from '../../assets/svgs'
 
 
-import { 
-    FaReact,
-    FaLinkedin,
+import {
     FaGithub,
     FaLink,
 } from "react-icons/fa";

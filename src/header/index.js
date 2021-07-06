@@ -6,23 +6,13 @@ import { IoMdClose, IoMdMenu } from "react-icons/io";
 import { Menu } from './menu';
 
 
-import { ReactComponent  as FullStack } from '../svgs/fullstack.svg';
-
-import { 
-
-    FaRegEnvelope,
-    FaLinkedin,
-    FaGithub,
-    FaEnvelope,
-} from "react-icons/fa";
-
 import { 
     FiGithub,
     FiLinkedin,
     FiMail
 } from "react-icons/fi";
 
-import { IconSVG } from '../svgs'
+import { IconSVG } from '../assets/svgs'
 
 
 
@@ -138,52 +128,6 @@ const MenuMyInfo = () => {
         </>
     )
 }
-
-// export const Header = props => {
-
-    
-//     const [menuHidden, setMenuHidden] = useState(true);
-
-
-
-//     function toggleMenu(e) {
-
-//         if(menuHidden){
-//             setMenuHidden(false);
-//         } else {
-//             setMenuHidden(true);
-//         }
-//       }
-    
-
-//     return (
-//         <>
-//             <div className="handheld-menu-div" style={styles.handheldMenuDiv(menuHidden)}>
-//                 <div className=".menu-toggler-div"  style={styles.menuTogglerDiv(menuHidden)} >
-//                     <button className="menu-toggler-btn" onClick={toggleMenu}>
-//                         { menuHidden ? <IoMdMenu style={styles.icon}/> :  <IoMdClose style={styles.icon}/> }       
-//                     </button>
-//                 </div>
-//                 <div className='menu-items-div' style={styles.menuItemsDiv(menuHidden)}>
-//                     <Menu 
-//                         items={props.menuItems}
-//                         selected={props.selectedItem}
-//                         onItemSelect={props.navigate}/>
-//                 </div>
-//             </div>
-//             <div className='menu-badge-div'>
-//             </div>
-//             <div className='menu-div' >
-//                 <Menu 
-//                     items={props.menuItems}
-//                     selected={props.selectedItem}
-//                     onItemSelect={props.navigate}/>
-//             </div>
-
-//         </>
-//     );
-// };
-
 
 
 
