@@ -4,16 +4,15 @@ import React, { useRef, useEffect } from 'react';
 
 
 
-import { 
-    FaCogs,
-    FaLinkedin,
-    FaGithub,
-    FaLink,
-    FaRegImages
-} from "react-icons/fa" ;
 
 
-import { ReactComponent  as FullStack } from './fullstack.svg';
+
+
+
+
+
+
+import fullstack, { ReactComponent  as FullStack } from './fullstack.svg';
 import { ReactComponent  as BackEnd } from './backend.svg'
 import { ReactComponent  as FrontEnd } from './frontend.svg';
 import { ReactComponent  as Database } from './database.svg';
@@ -45,9 +44,11 @@ import { ReactComponent  as Cuda } from './nvidia.svg';
 import { ReactComponent  as GitHub } from './github.svg';
 import { ReactComponent  as Email } from './email.svg';
 import { ReactComponent  as LinkedIn } from './linkedin.svg';
+import bioSVG, { ReactComponent  as BioVector } from './bio_illustrations2.svg';
 
-
-import { ReactComponent  as BioVector } from './bio_illustrations.svg';
+import shapeI, { ReactComponent  as ShapeI } from './43.svg';
+import shapeII, { ReactComponent  as ShapeII } from './55.svg';
+import shapeIII, { ReactComponent  as ShapeIII } from './36.svg';
 
 
 
@@ -297,3 +298,10 @@ export const IconSVG = props => {
 
 
 
+export const getSVG = {
+    0:fullstack,
+    1:bioSVG,
+    2:shapeI,
+    3:shapeII,
+    4:shapeIII
+}

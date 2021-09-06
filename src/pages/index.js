@@ -160,16 +160,17 @@ export const PageProvider = props => {
              
     }
 
-    useEffect( () => {
-        if(isCollapsed===false){
-            pageRef.current.scrollIntoView({ behavior: 'smooth' });
-        }
+    // useEffect( () => {
+    //     if(isCollapsed===false){
+    //         pageRef.current.scrollIntoView({ behavior: 'smooth' });
+    //     }
         
-    }, [isCollapsed])
+    // }, [isCollapsed])
 
     useEffect( () => {
-        
+
         if(props.selectedItem === props.name){
+            
             pageRef.current.scrollIntoView({ behavior: 'smooth' });
         }
 

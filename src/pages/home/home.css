@@ -2,112 +2,98 @@
 .home {
     display: flex;
     flex-direction: row;
-    height:100vh;
+    height:auto;
     width:100%;
-    min-height: 650px;
+    min-height: 700px;
     color: white;
-    background-size: cover;
-    background-position: left;
-    background-color: #f1eadf;
+    margin-bottom: 100px;
 }
 
 .bio-intro-section {
-    flex:3;
+    height: 100%;
+    width: 44%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+
 }
 
 .bio-illustration-section {
-    flex: 2;
+    height: 100%;
+    width: 55%;
     display: flex;
 }
 
-.bio-illustration-section-mobile {
-    display: none;
-}
+
+
 
 
 .bio-intro-wrapper {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    width: 85%;
     overflow: hidden;
+    width: 70%;
+    margin-bottom: 20px;
     font-family: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
 }
-
-.bio-intro-div {
-    display: flex;
-    flex-direction: column;
-    height: 90%;
-    width: 90%;
-    overflow: hidden;
-    font-size: 1.2vw;
-}
-
-
-.text-I-div {
+.bio-intro-wrapper h6{
     color: #525252;
-    flex: 1;
+    margin-bottom: 0;
 }
+
+
+
+/* .text-I-div {
+    color: #525252;
+    font-size: 0.9vw;
+} */
 
 .text-II-div {
-    flex: 4;
     display: flex;
     color: #525252;
+    margin-top: 0;
 }
 
 
 .text-II-div span{
     font-weight: bold;
-    font-size: 5vw;
-    margin-right: 15px;
-    margin-bottom: 1vw;
+    font-size: 3.5vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 20px;
+    color: #d85a4c;
+}
+
+.my-title {    
+    font-weight: bold;
+    font-size:1.2vw;
+    margin-bottom: 20px;
     color: #457c99;
 }
 
-.text-III-div {    
-    flex: 2;
-    font-weight: bold;
-    font-size:1.7vw;
-    margin-bottom: 2vw;
-    color: #525252;
-}
-
-.text-IV-div {
-    flex: 1;
+.my-quote {
     color: #646e64;
-    margin-top: 10px;
-    margin-bottom: 1.5vw;
-}
-
-
-
-
-.contact-button-div {
-    display: flex;
-    align-items: center;
-    height: 7vw;
+    font-size: 15px;
+    margin-bottom: 30px;
 }
 
 .contact-me-btn {
     display: flex;
+    margin-bottom: 20px;
+    align-self: center;
     align-items: center;
     justify-content: space-around;
     border: none;
-    height: 38%;
+    height: 50px;
     width: 110px;
     min-width: 100px;
     border-radius: 5px;
-    background-color: #457c99;
-    color: #cacaca;
+    background-color: #d85a4c;
+    color: #f1eadf;
     text-align: center;
     text-decoration: none;
     font-size: 0.8rem;
-
 }
 
 .contact-me-btn:hover {
@@ -131,8 +117,8 @@
     align-self: center;
     height: 4.5vw;
     width: 100%;
-    color: #cc8673;
-    border-top: 1px solid #cc8673;
+    color: #525252;
+    border-top: 1px solid #525252;
 }
 
 .social-btn {
@@ -155,26 +141,43 @@
 
 
 
-
-
-@media screen and (max-width: 1400px) {
-    .brief-bio-wrapper {
-        width: 50%;
-    }
-}
-
-
 @media screen and (max-width: 1140px) {
-    .brief-bio-wrapper {
-        width: 60%;
-    }
     .home {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
-    .bio-intro-div {
-        font-size: 1.7vw;
+
+    .bio-intro-section {
+        height: 50%;
+        width: 100%;
+        margin-bottom: 50px;
+        align-items: flex-start; 
     }
     
+    .bio-illustration-section {
+        width: 100%;
+        height: 50%;
+        
+    }
+    .bio-intro-wrapper {
+        width: 60%;
+    }
+    
+    
+
+    .text-II-div span{
+        font-size: 4.8vw;
+    }
+    .my-title {    
+        font-size:1.8vw;
+    }
+
+    /* .brief-bio-wrapper {
+        width: 60%;
+    }
+
+    .bio-intro-div {
+        font-size: 1.7vw;
+    }    
     .text-II-div span{
         font-size: 8vw;
     }    
@@ -184,56 +187,38 @@
     .contact-button-div {
         height: 10vw;
     }
-    .bio-illustration-section {
-        display: none;
-    }
+     */
     
-    .bio-illustration-section-mobile {
-        display: flex;
-        height: 45vw;
-    }
-    
-}
-
-@media screen and (max-width: 970px) {
-    .brief-bio-wrapper {
-        width: 80%;
-        margin-left: 0px;
-        align-items: center;
-    }
 }
 
 
 
 @media screen and (max-width: 600px) {
-    .home {
-        flex-direction: column;
-        
+    .text-II-div span{
+        font-size: 40px;
+    }  
+    .bio-intro-wrapper {
+        width: 80%;
+    }    
+    .my-title {    
+        font-size:14px;
     }
-    .bio-intro-section {
-        flex:1;
-    }
-    
-    .bio-illustration-section {
-        flex: 1;
-    }
-    .bio-illustration-section-mobile {
-        display: flex;
-        height: 80vw;
-    }
+/* 
     .bio-intro-wrapper {
         width: 98%;
     }
-    .bio-intro-div {
-        font-size: 2.8vw;
+    .text-I-div {
+        font-size: 3vw;
     }
-
+    .text-II-div p{
+        font-size: 3vw;
+    }
     .text-II-div span{
         font-size: 12vw;
     }    
     .text-III-div {
         font-size: 4vw;
-    }
+    } */
     .contact-button-div {
         height: 25vw;
     }

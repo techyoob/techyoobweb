@@ -8,8 +8,11 @@
     align-items: center;
     min-height: 390px;
     width: 100%;
-    background-color: #86949f;
 }
+
+
+
+
 
 .school-container {
     display: flex;
@@ -21,6 +24,7 @@
 
 .school-container h2{
     font-weight: bold;
+    color: #367493;
     background-color: #deb887;
     font-size: clamp(12px, 1.1rem, 19px);
     
@@ -35,8 +39,7 @@
 .school-footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-right: 5%;
+    justify-content: space-around;
 }
 
 
@@ -112,7 +115,7 @@
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .school-div  {
         flex-direction: row;
     }

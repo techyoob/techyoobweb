@@ -78,7 +78,7 @@ export const School = props => {
 
 
     return(
-        <div className={"school-container"}>
+        <div className="school-container">
             <h2> {props.item.name} </h2>
             <h4> {props.item.subject}</h4>
             <span className="school-footer">

@@ -9,7 +9,7 @@ import { Pages } from './pages';
 
 
 // const menuItems = ['home', 'about', 'experience', 'education', 'skills', 'projects', 'blog', 'contact', 'resume']
-const menuItems = ['home', 'about', 'experience', 'education', 'skills', 'projects', 'contact', 'resume']
+const menuItems = ['home', 'about', 'education',  'skills', 'experience',  'projects', 'contact', 'resume']
 
 
 function App() {
