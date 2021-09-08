@@ -33,9 +33,9 @@ export const Timeline = props => {
                         </div>
                         <div className="item-timeline-vector">
                             <svg height="100%" width="100%">
-                                <line x1="50%" y1="0" x2="50%" y2="100%" stroke="#7593b9" strokeWidth="2"/>
-                                <circle cx="50%" cy="15%" r="8" fill="#7593b9"/>
-                                <circle cx="50%" cy="15%" r="10" fill="none" stroke="#7593b9"/>
+                                <line x1="50%" y1="0" x2="50%" y2="100%" stroke="#457c99" strokeWidth="2"/>
+                                <circle cx="50%" cy="15%" r="8" fill="#457c99"/>
+                                <circle cx="50%" cy="15%" r="10" fill="none" stroke="#457c99"/>
                             </svg>
                         </div>
                         <div className="item-content">

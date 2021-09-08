@@ -34,7 +34,7 @@ const Carousel = (props) => {
     
 
     useEffect(()=>{
-        
+
         carouselItemsRefs.current[scrollStep].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' })
 
     }, [scrollStep])

@@ -49,6 +49,7 @@ import bioSVG, { ReactComponent  as BioVector } from './bio_illustrations2.svg';
 import shapeI, { ReactComponent  as ShapeI } from './43.svg';
 import shapeII, { ReactComponent  as ShapeII } from './55.svg';
 import shapeIII, { ReactComponent  as ShapeIII } from './36.svg';
+import shapeIV, { ReactComponent  as ShapeIV } from './56.svg';
 
 
 
@@ -303,5 +304,6 @@ export const getSVG = {
     1:bioSVG,
     2:shapeI,
     3:shapeII,
-    4:shapeIII
+    4:shapeIII,
+    5:shapeIV
 }

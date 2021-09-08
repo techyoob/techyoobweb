@@ -5,28 +5,22 @@
 import React, { useState, useRef, useEffect } from 'react';
 
 
-import './skills.css'
-import techsList from '../../assets/jsons/technologies.json';
-import langsList from '../../assets/jsons/languages.json';
-import othersList from '../../assets/jsons/others.json';
-import { IconSVG } from '../../assets/svgs'
+import './skills.css';
+import { IconSVG, getSVG } from '../../assets/svgs'
 
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-import skills from '../../assets/jsons/skills.json'
-import graph from '../../assets/jsons/graphs.json'
+import skills from '../../assets/jsons/skills.json';
 
 
 import { 
     FaAngleDoubleLeft,
     FaAngleDoubleRight,
 } from "react-icons/fa";
-// import { useSideScroll } from "./useSideScroll";
 
-import Carousel from "../../components/carousel.js";
 
 
 export const Skills = props => {
@@ -64,11 +58,18 @@ export const Skills = props => {
     return (
 
         
-        <div className="skills-div"
+        <div className="skills"
             ref={skillsRef}>
+            <div className="abstract-background-top"
+                style={{
+                    backgroundImage:`url(${getSVG[5]})`,
+                    backgroundRepeat:'no-repeat',
+                    backgroundSize:'contain'}}>
 
-            <div className="slider-container-div">
-                <Slider {...settings}>
+            </div>
+            <div className="skills-boxes">
+                <div className="slider-container-div">
+                    <Slider {...settings}>
                     {skills?.map((item, i)=>{                        
                     return (
                         <div className="slider-item-container"
@@ -85,7 +86,7 @@ export const Skills = props => {
                                                         <IconSVG name={skill.name}
                                                             width="90%"
                                                             height="90%"
-                                                            fill="#775786"/>
+                                                            fill="#deb887"/>
                                                     </div>
                                                     <span className="skill-name">
                                                         {skill.name}
@@ -99,6 +100,14 @@ export const Skills = props => {
                     )
                     })}
                 </Slider>
+                </div>
+           </div>
+            <div className="abstract-background-bottom"
+                style={{
+                    backgroundImage:`url(${getSVG[5]})`,
+                    backgroundRepeat:'no-repeat',
+                    backgroundSize:'contain'}}>
+
             </div>
         </div>
     );

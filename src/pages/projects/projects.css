@@ -57,6 +57,7 @@
 
 .project-info-div h4{
     color: #cc8673;
+    margin-bottom: 0px;
 }
 
 
@@ -84,10 +85,9 @@
   }
 
   .project-description-div {
-      width: 85%;
-      margin-top: 15px;
-
-  }
+    width: 90%;
+    font-size: 15px;
+}
 
 
   .project-footer-div {

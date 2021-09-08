@@ -2,7 +2,7 @@
 .home {
     display: flex;
     flex-direction: row;
-    height:auto;
+    height:100vh;
     width:100%;
     min-height: 700px;
     color: white;
@@ -15,7 +15,6 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-
 }
 
 .bio-illustration-section {
@@ -34,7 +33,7 @@
     border-radius: 10px;
     overflow: hidden;
     width: 70%;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
     font-family: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
 }
 .bio-intro-wrapper h6{
@@ -43,11 +42,6 @@
 }
 
 
-
-/* .text-I-div {
-    color: #525252;
-    font-size: 0.9vw;
-} */
 
 .text-II-div {
     display: flex;
@@ -140,6 +134,29 @@
 
 
 
+@media screen and (max-width: 1450px) {
+    .home {
+        flex-direction: column-reverse;
+    }
+    .bio-intro-section {
+        height: 40%;
+        width: 100%;
+    }    
+    .bio-illustration-section {
+        height: 60%;
+        width: 100%;
+    }
+    .bio-intro-wrapper {
+        width: 50%;
+        margin-bottom: 0px;
+    }    
+    .text-II-div span{
+        font-size: 6vw;
+    }
+    
+    
+}
+
 
 @media screen and (max-width: 1140px) {
     .home {
@@ -160,35 +177,12 @@
     }
     .bio-intro-wrapper {
         width: 60%;
+        margin-bottom: 100px;
     }
     
-    
-
-    .text-II-div span{
-        font-size: 4.8vw;
-    }
     .my-title {    
         font-size:1.8vw;
     }
-
-    /* .brief-bio-wrapper {
-        width: 60%;
-    }
-
-    .bio-intro-div {
-        font-size: 1.7vw;
-    }    
-    .text-II-div span{
-        font-size: 8vw;
-    }    
-    .text-III-div {
-        font-size: 2.7vw;
-    }
-    .contact-button-div {
-        height: 10vw;
-    }
-     */
-    
 }
 
 
@@ -203,22 +197,7 @@
     .my-title {    
         font-size:14px;
     }
-/* 
-    .bio-intro-wrapper {
-        width: 98%;
-    }
-    .text-I-div {
-        font-size: 3vw;
-    }
-    .text-II-div p{
-        font-size: 3vw;
-    }
-    .text-II-div span{
-        font-size: 12vw;
-    }    
-    .text-III-div {
-        font-size: 4vw;
-    } */
+
     .contact-button-div {
         height: 25vw;
     }

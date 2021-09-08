@@ -1,5 +1,6 @@
-/* 
- // Unify coloring for the theme */
+
+
+
 .experience {
     display: flex;
     flex-direction: column;
@@ -8,6 +9,13 @@
     min-height: 390px;
     width: 100%;
 }
+
+
+
+
+
+
+
 
 
 .timeline-container {
@@ -51,7 +59,7 @@
     border-radius: 10px;
     overflow-x: hidden;
     margin-bottom: 50px;
-    background-color: #cbcbcb;
+    background-color: #ececec;
 }
 
 
@@ -61,12 +69,17 @@
     flex-direction: column;
     width: 100%;
     margin-top: 15px;
-    margin-left: 25px;
+    margin-left: 10px;
 }
 
 .job-container h2{
     font-weight: bold;
-    background-color: #7593b9;
+    background-color: #457c99;
+    color: #deb887;
+    border-radius: 5px;
+    padding: 6px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     font-size: clamp(12px, 1.1rem, 19px);
     
 }
@@ -96,22 +109,25 @@
 }
 
 .job-name span{
-    margin-right: 30px;
 }
 
 .job-roles {
     font-size: 0.9vw;
-    margin-right: 50px;
     margin-bottom: 20px;
+    margin-right: 50px;
 }
+.job-roles ul{
+    padding-left: 20px;
+}
+
 .job-roles li{
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    margin-left: 0px;
 }
 
 
 .job-footer {
     display: flex;
-    padding-left: 15px;
     margin-bottom: 20px;
 }
 
@@ -179,7 +195,7 @@
 }
 
 @media screen and (max-width: 800px) {
-
+  
     .job-title {
         font-size: 2.4vw;
     }
@@ -200,6 +216,11 @@
 
 
 @media screen and (max-width: 600px) {
+    .job-container h2 {
+        font-size: 15px;
+    }
+
+
     .timeline-container {
         width: 90%;
     }

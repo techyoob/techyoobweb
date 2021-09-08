@@ -58,7 +58,7 @@ export const Home = props => {
                 backgroundRepeat:'no-repeat',
                 backgroundPosition:'left',
                 backgroundPositionY:'bottom',
-                backgroundSize:'cover'}}>
+                backgroundSize:'fit'}}>
                     <div className="bio-intro-section">
                         <BriefBioText {...props} />
                     </div>
@@ -75,13 +75,6 @@ export const Home = props => {
 
 
 
-// <BriefBioText {...props} />
-
-// style={{
-//     backgroundImage:`url(${getSVG[1]})`, 
-//     backgroundRepeat:'no-repeat',
-//     backgroundPosition:'center'}}
-
 
 
 const BriefBioText = props => {
@@ -95,7 +88,7 @@ const BriefBioText = props => {
                 Hello, I'm
             </h6>
             <div className="text-II-div">
-                <span>Ayoub Soud </span><h6> and I'm </h6>
+                <span>Ayoub Soud</span><h6> and I'm a</h6>
             </div>
             <div className="my-title">
                 Full Stack Mobile & Web Software Engineer

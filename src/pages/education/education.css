@@ -8,6 +8,7 @@
     align-items: center;
     min-height: 390px;
     width: 100%;
+    margin-bottom: 100px;
 }
 
 
@@ -18,107 +19,43 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 15px;
-    margin-left: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .school-container h2{
     font-weight: bold;
-    color: #367493;
+    color: #609374;
     background-color: #deb887;
+    border-radius: 5px;
     font-size: clamp(12px, 1.1rem, 19px);
-    
+    padding: 6px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .school-container h4{
-    margin: 0;
-    font-weight: normal;
-    font-size: clamp(9px, 0.9rem, 15px);
+    margin-left: 5px;
+    margin-top: 0px;
+    font-weight: bold;
 }
 
 .school-footer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.school-div {
-    display: flex;
-    flex-direction: row;
-}
-
-
-.school-logo-div {
-    flex:12;
-}
-
-.school-timeline-div {
-    flex:1;
-}
-
-.school-info-wrapper {
-    display: flex;
-    flex:12;
-    justify-content: center;
-    align-items: center;
-}
-
-.school-info-div {
-    display: flex;
-    flex-direction: column;
     width: 90%;
-    height: auto;
-    background-color: #f0f0f0;
-    padding-left: 20px;
-    box-shadow: 0px 0px 10px 1px #8d8d8d;
-    font-family: 'Open Sans', sans-serif;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 5px;
 }
-
-.school-info-div h2{
-    font-weight: bold;
-    background-color: #deb887;
-    font-size: clamp(12px, 1.1rem, 19px);
-    
-}
-
-.school-info-div h4{
-    margin: 0;
-    font-weight: normal;
-    font-size: clamp(9px, 0.9rem, 15px);
-}
-
-.school-info-div p{
-    font-weight: bold;
-    font-size: clamp(8px,1.0rem, 13px);
-}
-
 
 
 
 
 @media screen and (max-width: 600px) {
-    .school-div  {
-        flex-direction: row;
+    .school-container h4{
+        font-size: 12px;
     }
+    
   }
   
   

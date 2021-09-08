@@ -45,7 +45,7 @@ const ProjectItem = props => {
                         <IconSVG name={"react"} fill="#cc8673" width="100%" height="100%"/>
                     </div>                  
                     <h4>{props.item.name}</h4>
-                    <p className={"project-description-div"}>  
+                    <p className="project-description-div">  
                         {props.item.description}
                     </p>
                 </div>
