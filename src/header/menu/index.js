@@ -24,7 +24,7 @@ export const Menu = props => {
     const onItemSelect = index => {
         
         if(index==="resume"){
-            window.open(`https://drive.google.com/file/d/1icMpsOXH6OE_h1eOI_mQn_v-Ao9Bhzr9/view?usp=sharing`);
+            window.open(`https://drive.google.com/open?id=1iFuqiINGiMNcVWZfso2ziz20M0nmc6Po`);
         } else {
             props.onItemSelect(index)
 

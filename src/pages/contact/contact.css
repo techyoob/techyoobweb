@@ -5,14 +5,27 @@
 .contacts {
     display: flex;
     flex-direction: column;
+    color:#52616b;
+    width:100%;
+}
+
+.contact-abstract-background-top {
+    height: 100px;
+    width: 100%;
+    
+}
+
+.contact_list {
+    display: flex;
+    flex-direction: column;
     background-color: #a6afb6;
     color:#52616b;
     width:100%;
     align-items: center;
     justify-content: center;
     padding-left: 10%;
+    padding-bottom: 50px;
 }
-
 
 .contact-option-div {
     display: flex;

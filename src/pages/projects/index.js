@@ -38,24 +38,24 @@ export const Projects = props => {
 const ProjectItem = props => {
 
     return (
-        <div className={"project-div"}>
-            <div className={"project-body-div"}>
-                <div className={"project-info-div"}> 
+        <div className="project-div">
+            <div className="project-body-div">
+                <div className="project-info-div"> 
                     <div className="project-logo-div">
-                        <IconSVG name={"react"} fill="#cc8673" width="100%" height="100%"/>
+                        <IconSVG name={props.item.name} fill="#cc8673" width="100%" height="100%"/>
                     </div>                  
                     <h4>{props.item.name}</h4>
                     <p className="project-description-div">  
                         {props.item.description}
                     </p>
                 </div>
-                <div className={"project-skills-div"}>
+                <div className="project-skills-div">
                     {props.item.technologies.map( (tech, i) => {
                         return <IconSVG key={i} name={tech} x="0" y="0" width="100%" height="100%" />;
                     })}
                 </div>
             </div>
-            <div className={"project-footer-div"}>
+            <div className="project-footer-div">
             {Object.keys(props.item.links).map( (name, i) => {
 
                 const link = props.item.links[name]

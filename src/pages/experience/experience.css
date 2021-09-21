@@ -8,6 +8,7 @@
     align-items: center;
     min-height: 390px;
     width: 100%;
+    margin-bottom: 100px;
 }
 
 
@@ -21,7 +22,6 @@
 .timeline-container {
     width: 85%;
     height: auto;
-    margin-bottom:50px;
 }
 
 .timeline-item-container-even, .timeline-item-container-odd {
