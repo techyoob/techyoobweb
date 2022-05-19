@@ -1,6 +1,6 @@
 [
     {
-        "name":"front end",
+        "name":"frontend",
         "children":[
             { "name":"react" },
             { "name":"html" },
@@ -9,11 +9,13 @@
         ]
     },
     {
-        "name":"back end",
+        "name":"backend",
         "children":[
-            {"name":"nodejs"},
+            {"name":"node.js"},
             {"name":".net"},
-            {"name":"express.js"}
+            {"name":"express.js"},
+            {"name":"flask"},
+            {"name":"nginx"}
         ]
     },
     {
@@ -34,6 +36,7 @@
     {
         "name":"iot",
         "children":[
+            {"name":"micropython"},
             {"name":"arduino"},
             {"name":"texas instruments"}
         ]
@@ -53,6 +56,12 @@
     {
         "name":"other",
         "children":[
+            {"name":"docker"},
+            {"name":"memcached"},
+            {"name":"redis"},
+            {"name":"rabitmq"},
+            {"name":"github"},
+            {"name":"jira"},
             {"name":"computer vision"},
             {"name":"cuda"}
         ]

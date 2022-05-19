@@ -56,7 +56,8 @@ export const Pages = props => {
 
     const handleScroll = (e) =>{
         
-        console.log("scrolling 11111..");    
+        console.log("scrolling 11111..");
+        
     }
 
     return (

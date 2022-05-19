@@ -1,16 +1,32 @@
 [
     {
+        "name": "Side Projects - Stock Screener",
+        "start": "December 2021",
+        "end": "Current",
+        "position": "Full Stack Web & Mobile Engineer",
+        "location":"USA",
+        "roles":[
+            "Designing and developing an end-to-end three-tiered microservices architecture.",
+            "Designing and developing responsive user interface to visualize time series data using ReactJS.",
+            "Designing and developing scalable, modular and secured backend microservices using docker containers.",
+            "Designing and developing modular database architecture to maintain various aspects of stock market data.",
+            "Researching and developing time series data visualization components.",
+            "Researching and testing time series patterns.",
+            "Involved skills are Python, JavaScript, Docker, NGINX, React, NodeJS, Flask, Rest API, MongoDB, Memcached, RabbitMQ, Git, Scrum, Pytest."
+        ]
+    },
+    {
         "name": "Freelance",
         "start": "October 2018",
         "end": "Current",
         "position": "Full Stack Web & Mobile Engineer",
         "location":"USA",
         "roles":[
-            "Building and designing full stack web solutions.",
+            "Designing and building full stack web solutions.",
             "Updating existing projects.",
-            "Prototyping and consulting.",
-            "Tutoring programming and web frameworks fundamentals.",
-            "Involved skills are Javascript, Python, NodeJs, ExpressJs, SQL/NoSQL databases, React, .NET and others."            
+            "Designing and building prototypes.",
+            "Tutoring and mentoring students.",
+            "Involved skills are Javascript, Python, NodeJs, ExpressJs, SQL/NoSQL databases, React, .NET and others."
         ]
     },
     {
@@ -21,17 +37,11 @@
         "location":"Orlando FL",
         "roles":[
             "Contributed as a key role to development lifecycle of all milestones required to deliver a consumer product.",
+            "Designed and developed remote control application for iOS and Android devices using React Native framework with other libraries such as Redux asynchronous actions and React Navigation.",
+            "Helped design and implement database models for user sessions, usage statistics, and user accounts using MongoDB, NodeJS, and ExpressJS.",
             "Worked collaboratively in an agile team of software, hardware and mechanical engineers to build and test IoT prototypes.",
-            "Designed and developed firmware to manipulate Wi-Fi and Bluetooth connected lighting devices.",
-            "Created unit tests to ensure IoT prototypes meet consumer requirements.",
-            "Helped design user friendly mobile application wireframes.",
-            "Designed and developed remote control application for iOS and Android devices using React Native framework.",
-            "Designed and managed the application state with event based asynchronous actions using Redux and Redux Thunk.",
-            "Implemented presentation and routing of application screens with React Navigation.",
-            "Helped design and implementation of the database models that enabled user login, usage statistics, and user profiles using MongoDB.",
-            "Designed the backend boilerplate to handle user requests using Node.js and Express.js",
-            "Other involved skills are C/C++, Javascript, Java, ES6, Git, Scrum and Python."
-            
+            "Designed and developed firmware with hardware abstraction layers and middleware to have Wi-Fi/Bluetooth access and control lighting state using Micropython.",    
+            "Other involved skills are C/C++, Javascript, Java, ES6, Git, Scrum and Python."        
         ]
     },
     {
@@ -41,13 +51,13 @@
         "position": "Computer Engineer",
         "location":"Kissimmee FL",
         "roles":[
-            "Built strong expertise in all phases of the software development life cycle.",
-            "Researched, designed and implemented a biometrics authentication system prototype with touch less scanner.",
-            "Helped build and improve special phase imaging systems.",
+            "Built strong expertise across all phases of the software development life cycle.",
+            "Helped research, build and improve special phase imaging prototypes.",
+            "Managed software packaging process.",
             "Managed complete software packaging process.",
             "Helped design and improve software quality assurance process.",
+            "Helped update and document proprietary imaging device firmware.",
             "Involved skills are C/C++, C# for .NET, XAML, Cuda, OpenCL, OpenCV, MATLAB, TFS, and Optics."
-            
         ],
         "link":"https://www.photon-x.com/"
     },
@@ -62,7 +72,6 @@
             "Configured and customized marketer platform using PHP based add-ons to improve server’s performance.",
             "Configured SMPT servers to comply with CAN-SPAM regulations and ensure healthy email deliverability.",
             "Designed and created SQL database to maintain clean leads data.",
-            "Developed desktop application with Java and XML to filter and update campaign leads database.",
             "Involved skills are network protocols, spam regulations, Java, JavaFX, MySQL, and PHP."
         ]
     }
