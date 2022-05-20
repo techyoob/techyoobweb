@@ -44,6 +44,15 @@ import { ReactComponent  as Cuda } from './nvidia.svg';
 import { ReactComponent  as GitHub } from './github.svg';
 import { ReactComponent  as Email } from './email.svg';
 import { ReactComponent  as LinkedIn } from './linkedin.svg';
+import { ReactComponent  as Docker } from './docker.svg';
+import { ReactComponent  as Flask } from './flask.svg';
+import { ReactComponent  as Nginx } from './nginx.svg';
+import { ReactComponent  as Jira } from './jira.svg';
+import { ReactComponent  as RabbitMQ } from './rabbitmq.svg';
+import { ReactComponent  as Memcached } from './memcached.svg';
+import { ReactComponent  as Redis } from './redis.svg';
+import { ReactComponent  as Micropython } from './micropython.svg';
+
 
 import bioSVG, { ReactComponent  as BioVector } from './bio_illustrations2.svg';
 import electionBox, { ReactComponent  as ElectionsBox } from './electionsbox.svg';
@@ -87,7 +96,7 @@ export const IconSVG = props => {
                         height={typeof props.height === 'undefined' ? "100%" : props.height}
                         fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
             )
-        case "nodejs":
+        case "node.js":
             return(
                 <NodeJS x={typeof props.x === 'undefined' ? 0 : props.x}
                         y={typeof props.y === 'undefined' ? 0 : props.y}
@@ -279,6 +288,76 @@ export const IconSVG = props => {
         case "linkedin":
             return(
                 <LinkedIn x={typeof props.x === 'undefined' ? 0 : props.x}
+                        y={typeof props.y === 'undefined' ? 0 : props.y}
+                        width={typeof props.width === 'undefined' ? "100%" : props.width}
+                        height={typeof props.height === 'undefined' ? "100%" : props.height}
+                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>   
+        )
+        case "docker":
+            return(
+                <Docker x={typeof props.x === 'undefined' ? 0 : props.x}
+                        y={typeof props.y === 'undefined' ? 0 : props.y}
+                        width={typeof props.width === 'undefined' ? "100%" : props.width}
+                        height={typeof props.height === 'undefined' ? "100%" : props.height}
+                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
+               
+        )
+        case "flask":
+            return(
+                <Flask x={typeof props.x === 'undefined' ? 0 : props.x}
+                        y={typeof props.y === 'undefined' ? 0 : props.y}
+                        width={typeof props.width === 'undefined' ? "100%" : props.width}
+                        height={typeof props.height === 'undefined' ? "100%" : props.height}
+                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
+        )
+        case "nginx":
+            return(
+                <Nginx x={typeof props.x === 'undefined' ? 0 : props.x}
+                        y={typeof props.y === 'undefined' ? 0 : props.y}
+                        width={typeof props.width === 'undefined' ? "100%" : props.width}
+                        height={typeof props.height === 'undefined' ? "100%" : props.height}
+                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
+               
+        )
+        case "jira":
+            return(
+                <Jira x={typeof props.x === 'undefined' ? 0 : props.x}
+                        y={typeof props.y === 'undefined' ? 0 : props.y}
+                        width={typeof props.width === 'undefined' ? "100%" : props.width}
+                        height={typeof props.height === 'undefined' ? "100%" : props.height}
+                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
+               
+        )
+        case "rabbitmq":
+            return(
+                <RabbitMQ x={typeof props.x === 'undefined' ? 0 : props.x}
+                        y={typeof props.y === 'undefined' ? 0 : props.y}
+                        width={typeof props.width === 'undefined' ? "100%" : props.width}
+                        height={typeof props.height === 'undefined' ? "100%" : props.height}
+                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
+               
+        )
+        case "memcached":
+            return(
+                <Memcached x={typeof props.x === 'undefined' ? 0 : props.x}
+                        y={typeof props.y === 'undefined' ? 0 : props.y}
+                        width={typeof props.width === 'undefined' ? "100%" : props.width}
+                        height={typeof props.height === 'undefined' ? "100%" : props.height}
+                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
+               
+        )
+        case "redis":
+            return(
+                <Redis x={typeof props.x === 'undefined' ? 0 : props.x}
+                        y={typeof props.y === 'undefined' ? 0 : props.y}
+                        width={typeof props.width === 'undefined' ? "100%" : props.width}
+                        height={typeof props.height === 'undefined' ? "100%" : props.height}
+                        fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
+               
+        )
+        case "micropython":
+            return(
+                <Micropython x={typeof props.x === 'undefined' ? 0 : props.x}
                         y={typeof props.y === 'undefined' ? 0 : props.y}
                         width={typeof props.width === 'undefined' ? "100%" : props.width}
                         height={typeof props.height === 'undefined' ? "100%" : props.height}

@@ -59,7 +59,7 @@
             {"name":"docker"},
             {"name":"memcached"},
             {"name":"redis"},
-            {"name":"rabitmq"},
+            {"name":"rabbitmq"},
             {"name":"github"},
             {"name":"jira"},
             {"name":"computer vision"},
