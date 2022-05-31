@@ -55,7 +55,7 @@ import { ReactComponent  as Micropython } from './micropython.svg';
 
 
 import bioSVG, { ReactComponent  as BioVector } from './bio_illustrations2.svg';
-import electionBox, { ReactComponent  as ElectionsBox } from './electionsbox.svg';
+import electionBox, { ReactComponent  as Pomodoro } from './pomodoro.svg';
 import tradeScreener, { ReactComponent  as TradeScreener } from './trade_screener.svg';
 import techyoobCom, { ReactComponent  as TechyoobCom } from './techyoob.com.svg';
 
@@ -382,16 +382,16 @@ export const IconSVG = props => {
                     fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
                
         )
-        case "US Elections in Motion":
+        case "Pomodoro":
             return(
-                <ElectionsBox x={typeof props.x === 'undefined' ? 0 : props.x}
+                <Pomodoro x={typeof props.x === 'undefined' ? 0 : props.x}
                     y={typeof props.y === 'undefined' ? 0 : props.y}
                     width={typeof props.width === 'undefined' ? "100%" : props.width}
                     height={typeof props.height === 'undefined' ? "100%" : props.height}
                     fill={typeof props.fill === 'undefined' ? "#cacaca" : props.fill}/>
                
         )
-        case "Trading Screener":
+        case "Stock Screener":
             return(
                 <TradeScreener x={typeof props.x === 'undefined' ? 0 : props.x}
                     y={typeof props.y === 'undefined' ? 0 : props.y}

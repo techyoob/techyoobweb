@@ -9,21 +9,21 @@
         }
     },
     {
-        "name":"US Elections in Motion",
-        "description":"US Election in Motion is a project was built while tutoring a client for Reactjs, Nodejs and MongoDB. It uses historical data to render an animated colored map per state per winner party for all previous us elections.",
-        "technologies":["react", "css", "html", "nodejs", "es6", "mongodb"],
+        "name":"Pomodoro",
+        "description":"Pomodoro is a time managment application developed to help break work into intervals of 30 min separated with short and long breaks",
+        "technologies":["react", "css", "html", "nodejs", "es6"],
         "links":{
-            "GitHub":"https://github.com/nmouahbi/electionmap",
-            "Demo":"http://www.techyoob.com/"
+            "GitHub":"https://github.com/techyoob/pomodoro",
+            "Demo":"https://leafy-trifle-2678b3.netlify.app"
         }
     },
     {
-        "name":"Trading Screener",
+        "name":"Stock Screener",
         "description":"Trading Screener is full stack solution that sift through thousands of stocks in the U.S to identify patterns and behaviors in a fashion that helps individual investors to rationalize their emotional decisions.",
         "technologies":["react", "css", "html", "nodejs", "es6", "flask", "python", "mongodb"],
         "links":{
-            "GitHub":"https://github.com/techyoob/trading_screener",
-            "Demo":"http://www.techyoob.com/"
+            "GitHub":"https://github.com/techyoob/stock_sreener_demo",
+            "Demo":"https://sage-snickerdoodle-3033d6.netlify.app/"
         }
     }
 ]
